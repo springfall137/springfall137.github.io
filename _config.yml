@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Dahyun Joo"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Dahyun Joo"
 description              : &description "personal description"
 url                      : https://springfall137.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,13 +23,13 @@ repository               : "springfall137/springfall137.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Dahyun Joo"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Hi, world!"
+  location         : "Seoul"
+  employer         : "Seoul National University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "clairda@snu.ac.kr" 
 
   # Academic websites
   academia         : # URL
