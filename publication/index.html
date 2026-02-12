@@ -1,0 +1,27 @@
+---
+layout: page
+title: Publication
+permalink: /publication/
+---
+
+<div class="container py-4">
+    <div class="row pb-2">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Publications</h2>
+        <p>Publication list will be updated soon.</p>
+    </div>
+
+    <div class="row mt-4">
+        {% for pub in site.publication %}
+        <div class="col-12 mb-4">
+            <h4>{{ pub.title }}</h4>
+            <p><em>{{ pub.venue }}</em> - {{ pub.year }}</p>
+            {% if pub.authors %}
+            <p>Authors: {{ pub.authors | join: ', ' }}</p>
+            {% endif %}
+            {% if pub.paper %}
+            <a href="{{ pub.paper }}" target="_blank">Paper</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
