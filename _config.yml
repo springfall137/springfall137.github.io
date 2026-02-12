@@ -1,0 +1,34 @@
+title: Kyuhwan Shim
+author:
+  name: Kyuhwan Shim
+  email: kyuhwan.shim@snu.ac.kr
+description: > # this means to ignore newlines until "show_excerpts:"
+  I am a Master's student in the Graduate School of Artificial Intelligence at Seoul National University. 
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+permalink: /:title
+
+url: "https://underthelights.github.io" # the base hostname & protocol for your site
+  
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
+
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-VG8LB4J4EL"
+    anonymize_ip         : # true, false (default)
+
+collections:
+  publication:
+    output: true
+
+theme: minima
+markdown: kramdown

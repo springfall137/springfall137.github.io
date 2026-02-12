@@ -1,0 +1,29 @@
+project:
+  - title: "Camera Invariant Domain Adaptation"
+    description: "Talent Pool Invitation (Samsung Electronics), Top 30"
+    image: "samsung_ai.png"
+    collaborators:
+      - Hyunjae Kim
+  
+  - title: "Risk Rating Model for Small Business Owners (Winner)"
+    description: "Gangseo-gu Office 2023 Winner (Mayor's Award)"
+    image: "GANGSEO.png"
+    collaborators:
+      - Heejin Park
+      - Mijung Bang
+      - Moonil Yang
+      
+  - title: "Jeju Island Travel Route Recommender System for Eco-Friendly & Gen-MZ (Winner)"
+    description: "BIG CONTEST 2022 Winner (by NIA, Shinhan Card)"
+    image: "big_contest.gif"
+    collaborators:
+      - Jeonghyun Ha
+      - Kyunghoon Na
+      - Kyungjoo Ko
+      - Hannah Jeong
+  
+  - title: "LG Aimers 2 : Data Intelligence"
+    description: "Top 30"
+    image: "lg_aimers.jpg"
+    collaborators:
+      - Yunah Choi

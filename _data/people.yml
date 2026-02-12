@@ -1,0 +1,25 @@
+people:
+  - name: Kyuhwan Shim
+    affiliation: ¹Graduate School of AI & ²AI Institute, Seoul National University
+    website: "https://underthelights.github.io/"
+  - name: Gi-Cheon Kang
+    affiliation: ¹Graduate School of AI & ²AI Institute, Seoul National University
+    website: "http://gicheonkang.com" 
+  - name: Junghyun Kim
+    affiliation: ¹Graduate School of AI & ²AI Institute, Seoul National University
+    website: "https://jhkim-snu.github.io/"
+  - name: Byoung-Tak Zhang
+    affiliation: ¹Graduate School of AI & ²AI Institute, Seoul National University
+    website: "https://bi.snu.ac.kr/~btzhang/"
+  - name: Jun Ki Lee
+    affiliation: AI Institute, Seoul National University
+    website: "https://junkilee.github.io/"
+  - name: Ganghun Kim
+    affiliation: Computer Science, Sogang University
+  - name: Hyunjae Kim
+    affiliation: Computer Science, Sogang University
+    website: "https://typednow.com/"
+  - name: Geon Choi
+    affiliation: Computer Science, Sogang University
+  - name: Myoung-Wan Koo
+    affiliation: Computer Science, Sogang University

@@ -1,0 +1,719 @@
+---
+layout: default
+title: Kyuhwan Shim
+description: Graduate School of AI, Seoul National University
+---
+
+
+{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
+{% assign projects = site.data.main-project.project %}
+{% assign news = site.data.news.list %}
+
+<div class="container py-4">
+    <!-- Biography Section -->
+    <div class="row mb-5">
+        <div class="col-md-4 text-center">
+            <img src="./assets/profile/kyuhwanshim.jpg" alt="Biography Photo" class="img-fluid rounded-circle"
+                style="width: 150px; height: 150px; object-fit: cover; margin: 0 auto;">
+            <div class="mt-3">
+                <p style="font-size: 2rem; font-weight: 500;">Kyuhwan Shim</p>
+                <p style="font-size: 1rem; font-weight: 300;">
+                    Master's Student @
+                    Graduate School of AI<br>
+                    <a href="https://aiis.snu.ac.kr">Seoul National University</a>
+                </p>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="mailto://kyuhwan.shim@snu.ac.kr" class="document-link">
+                        <i class="fa-solid fa-envelope" style="margin-right: .8rem;"></i>
+                    </a>
+
+                    <!-- Curriculum Vitae -->
+                    <a href="https://underthelights.github.io/cv.pdf" class="document-link">
+                        <i class="fa-solid fa-file" style="margin-right: .8rem;"></i>
+                    </a>
+
+                    <!-- Google Scholar -->
+                    <a href="https://scholar.google.com/citations?hl=ko&user=BCSJtGoAAAAJ&view_op=list_works&gmla=AL3_zij7TsHcAUIThEj_S_qI7fu94GzYUzgl37j7vaPgy4mErwH50eQN41axBSLshMkRHyLxOYP7cCgV_rHE0iHxFmfFvRNumlUuG1_EbJp5uCnogeMtWzDjfg"
+                        class="document-link">
+                        <i class="fa-solid fa-graduation-cap" style="margin-right: .8rem;"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/kyuhwan-shim/" class="document-link">
+                        <i class="fa-brands fa-linkedin" style="margin-right: .8rem;"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/underthelights" class="document-link">
+                        <i class="fa-brands fa-github" style="margin-right: .8rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2>Biography</h2>
+            <style>
+            .logo {
+            height: 14px;
+            vertical-align: middle;
+            margin-right: 4px;
+            opacity: 0.85;
+            }
+            </style>
+
+            <p style="font-size: .95rem; font-weight: 300 !important;" class="mt-3">
+                Greetings 🤗! I'm a graduate student at the
+                <a href="https://gsai.snu.ac.kr">
+                    <img src="https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
+                        alt="SNU logo" class="logo">
+                    Graduate School of Artificial Intelligence
+                </a> at
+                <a href="https://snu.ac.kr">Seoul National University</a>, under the supervision of
+                <a href="https://bi.snu.ac.kr/~btzhang">Prof. Byoung-Tak Zhang</a>.
+                Previously, I received my Bachelor's Degree from
+                <a href="https://sogang.ac.kr">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Sogang_University_emblem.png"
+                        alt="Sogang University logo" class="logo">
+                    Sogang University
+                </a> in Computer Science.
+            </p>
+
+            <p style="font-size: .95rem; font-weight: 300 !important;" class="mt-3">
+                My research focuses on developing machine learning algorithms to build robust
+                <strong>Physical Intelligence</strong> systems through multimodal learning.
+                I study how embodied agents explore, adapt, and continuously refine their actions in dynamic real-world environments.
+                My goal is to move beyond conventional Vision-Language-Action (VLA) models and build agents that can
+                learn and explore efficiently in the wild, 
+                generalize across diverse tasks,
+                and act in interpretable, reliable, and human-aligned ways.
+            </p>
+
+            <p style="font-size: .95rem; font-weight: 300 !important;" class="mt-3">
+                I recently joined
+                <a href="https://www.lgresearch.ai">
+                    <img src="https://mms.businesswire.com/media/20230810311418/en/1863874/5/LG_AI_Research_Eng.jpg?download=1"
+                        alt="LG AI Research logo" class="logo">
+                        <!-- LG AI Research -->
+                </a> as a <strong>Research Scientist Intern</strong>, where I explore embodied intelligence and its application to real-world agents.
+                Previously, I worked as a <strong>Machine Learning Engineer</strong> at
+                <a href="https://nota.ai">
+                    <img src="https://kr.object.gov-ncloudstorage.com/nextround/mypage/company/4095/b3d99c84-85df-4c80-b4d1-b1f1e6af06b0.png"
+                        alt="Nota logo" class="logo">
+                    <!-- Nota Inc. -->
+                </a> and co-founded
+                <strong>OCONNECT</strong> with my CNSH colleagues.
+            </p>
+
+
+            <div class="mt-4 d-flex flex-wrap align-items-center" style="gap: 0.8rem;">
+                <a href="/cv.pdf" class="btn btn-primary d-flex align-items-center shadow-sm"
+                    style="padding: 0.55rem 1.2rem; font-size: 0.95rem; border-radius: 0.5rem; color: white !important;"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-lines me-2"></i> Curriculum Vitae
+                </a>
+
+                <a href="mailto:kyuhwan.shim@snu.ac.kr" class="btn btn-outline-dark d-flex align-items-center shadow-sm"
+                    style="padding: 0.55rem 1.2rem; font-size: 0.95rem; border-radius: 0.5rem;">
+                    <i class="fa-solid fa-envelope me-2"></i> kyuhwan.shim@snu.ac.kr
+                </a>
+            </div>
+
+
+
+            <div class="col-md-12">
+                <br><br>
+                <h5>Education</h5>
+
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-graduation-cap" style="margin-right: .5rem;"></i>
+                            <span><b><a href="https://gsai.snu.ac.kr/">Seoul National University</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Sep. 2024 ~ Present
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>MS @ <a href="https://aiis.snu.ac.kr/">Graduate School of Artificial
+                                Intelligence</a></medium>
+                    </div>
+                </div>
+
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-graduation-cap" style="margin-right: .5rem;"></i>
+                            <span><b><a href="https://sogang.ac.kr/">Sogang University</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Mar. 2019 ~ Aug. 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>BS @ <a href="https://cs.sogang.ac.kr/">Computer Science and Engineering</a>
+                        </medium>
+                    </div>
+                </div>
+
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-graduation-cap" style="margin-right: .5rem;"></i>
+                            <span><b><a href="https://cnsh.cnehs.kr/">Chungnam Science High School</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Mar. 2016 ~ Feb. 2019
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>R&E at Informatics Student Group</medium>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container py-4">
+    <div class="project-view">
+        {% include publication/index.html %}
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Experience</h3>
+            <section id="experience">
+
+                <h5>Research Experience</h5>
+                    <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-flask" style="margin-right: .5rem;"></i>
+                            <span><b>Vision Lab</b></span><br>
+                            <span><b><a href="https://lgresearch.ai">@ LG AI Research</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Nov 2025 - Present
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <span>Research Scientist Intern<br> </span>
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-flask" style="margin-right: .5rem;"></i>
+                            <span><b>Autonomous Intelligent Systems Group</b></span><br>
+                            <span><b><a href="https://www.ais.uni-bonn.de/">@ Universität Bonn</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Jul 2024 - Aug 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <span>Visiting Student Researcher<br> </span>
+                        <span><i>(PI : <a href="https://www.ais.uni-bonn.de/behnke/">Prof. Sven Behnke</a>)</i></span>
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-flask" style="margin-right: .5rem;"></i>
+                            <span><a href="https://bi.snu.ac.kr/"><b>Biointelligence Lab <br>@ Seoul Nat'l University</b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Dec 2023 - Aug 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <span>Undergraduate Research Assistant<br> </span>
+                        <span><i>(PI : <a href="https://bi.snu.ac.kr/~btzhang/">Prof. Byoung-Tak Zhang</a>)</i></span>
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-flask" style="margin-right: .5rem;"></i>
+                            <span><a href="https://www.leelabsg.org/"><b>Lee Lab<br>@ Seoul Nat'l University</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Dec 2023 - Feb 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <span>Mentee of <a
+                                href="https://gsds.snu.ac.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%82%ac%ec%9d%b4%ec%96%b8%ec%8a%a4%eb%8c%80%ed%95%99%ec%9b%90-google-%ed%98%91%eb%a0%a5-%ea%b2%a8%ec%9a%b8%eb%b0%a9%ed%95%99-explorecsr-%ed%94%84%eb%a1%9c%ea%b7%b8/">SNU
+                                GSDS ExploreCSR Program</a><br> </span>
+                        <span><i>(PI : <a href="https://www.leelabsg.org/">Prof. Seunggeun (Shawn) Lee </a>)</i></span>
+                    </div><br>
+                </div>
+                <br>
+                <h5>Teaching Experience</h5>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-chalkboard-user" style="margin-right: .5rem;"></i>
+                            <span><b>Artificial Intelligence (4190.408)</b></span><br>
+                            <span><b>@ Seoul Nat’l University</b></span>
+
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Jul 2024 - Aug 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <span>Teaching Assistant <br> </span>
+                    </div><br>
+                </div>
+                <br>
+                <h5>Work Experience</h5>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-briefcase" style="margin-right: .5rem;"></i>
+                            <span><b>Team TIDYBOY-DSPL</b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Mar 2024 ~ Aug 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>Robocup2024
+                        </medium>
+                        <!-- <p style="font-size: .95rem; font-weight: 300;">
+                            <a href="https://drive.google.com/file/d/1I0jE7nnWiEHefcE5POKJSnxS68QTiFjW/view?usp=drive_link">🏆
+                                Finalist (3rd place)</a> in the <a href="https://athome.robocup.org/">Robocup@Home DSPL League</a>
+                        </p> -->
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-briefcase" style="margin-right: .5rem;"></i>
+                            <span><b><a href="https://nota.ai">Nota Inc.</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Mar 2023 ~ Aug 2023
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>Machine Learning Engineer Intern @ ITS Team</medium>
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-briefcase" style="margin-right: .5rem;"></i>
+                            <span><b><a href="https://cb119.chungbuk.go.kr/yd119/main.do">Yeongdong Firehouse &
+                                        Rescue</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Aug 2020 ~ Apr 2022
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>Military Duty (Korea Conscripted Firefighters)</medium>
+                    </div><br>
+                </div>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-briefcase" style="margin-right: .5rem;"></i>
+                            <span><b><a href="http://oconnect.kr/">OCONNECT</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Jun 2020 ~ Aug 2023
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>Co-Founder & Programmer</medium>
+                        <p style="font-size: .95rem; font-weight: 300;">
+                            Assisted in developing <strong>ONESTEP</strong>, an easy-insert socket.
+                        </p>
+                    </div>
+                    <br>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <h2>Awards</h2>
+            <section id="awards">
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Finalist <br>@ Team TIDYBOY</b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Aug 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            RoboCup2024@Home Leagues, <a href="https://2024.robocup.org">Eindhoven, Netherlands</a>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
+                                <li>🥉 <strong>3rd Place</strong> in <a
+                                        href="https://athome.robocup.org/category/leagues/dspl/" target="_blank">DSPL
+                                        League</a></li>
+                                <li>🥈 <strong>2nd Place</strong> in <a
+                                        href="https://athome.robocup.org/category/leagues/opl/" target="_blank">OPL
+                                        League</a></li>
+                            </ul>
+                            <div style="display: flex; justify-content: flex-start;">
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1I0jE7nnWiEHefcE5POKJSnxS68QTiFjW/view?usp=sharing"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        🏆 TIDYBOY-DSPL
+                                        <span
+                                            style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1rxC79jBOboVMgE4snclVyWhmbtxybhmP/view?usp=drive_link"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        📊 Team Poster
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                            </div>
+                        </medium>
+                    </div>
+                </div>
+                <br>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Runner-up (2nd Place) <br>@ SNU GSDS & Google ExploreCSR </b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Feb 2024
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            Google Research & Data Science Graduate School @ Seoul Nat’l University
+
+                            <div style="display: flex; justify-content: flex-start;">
+                                <span>
+                                    <span
+                                        style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                        <a href="" style="color: #003478; text-decoration: none; position: relative;">
+                                            🏆 Runner-up
+                                            <span
+                                                style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;">
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </medium>
+                    </div>
+                </div>
+                <br>
+                <div class="dated-entry mb-6">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Top 30 (Invitation for the Talent Pool) <br>@ <a
+                                        href="https://dacon.io/en/competitions/official/236132/overview/description">Samsung
+                                        AI Challenge 2023</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Sep 2023
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            <strong> Samsung Advanced Institute of Technology & DACON </strong> <br>
+                            Camera Invariant Domain Adaptation for Semantic Segmentation
+                            <div style="display: flex; justify-content: flex-start;">
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://dacon.io/en/competitions/official/236132/"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        <!-- TODO -->
+                                        🔝 Top 30
+                                        <span
+                                            style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1AH5TUcBAKK5bkpeOMIJpUhuyyLC6Hf8Z/view"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        📧 Talent Pool Invitation (Samsung Electronics)
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://drive.google.com/file/d/19zF3f-9vLC4RSb9fXOn7W2s2cPoyKFHC/view"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        📊 Presentation
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://typednow.com/?p=239"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        📝 Blog
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+
+                            </div>
+                    </div>
+                </div><br>
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Finalist (Top 30)<br> <a href="https://lgresearch.ai/news/view?seq=317">@ LG
+                                        Aimers</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Dec 2022 - Mar 2023
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            <strong> LG AI Research & DACON </strong> <br>
+                            <span>Smart Factory Product Quality Status Classification</span>
+                            <div style="display: flex; justify-content: flex-start;">
+
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
+                                        <!-- TODO -->
+                                        🔝 Finalist (Top 30)
+                                        <span
+                                            style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
+                                        📊 Presentation
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Grand Prize (1st Prize)<br> <a
+                                        href="https://www.gangseo.seoul.kr/reserve/re040101/view?aplySn=44&curPage=1">@
+                                        Gangseo-gu Data Contest</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Mar 2023 - May 2023
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            <strong> Ministry of Gangseo-gu Office</strong> <br>
+                            <strong>Risk Rating Model for Small Business Owners using the Credit Rating
+                                Model</strong>
+                            <div style="display: flex; justify-content: flex-start;">
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://abit.ly/f1gz8k"
+                                        style="color: #c8102e; text-decoration: none; position: relative;">
+                                        <img src="https://www.sogang.ac.kr/intro/symbol/data/Sogang_UI_symbol.png"
+                                            alt="Sogang Logo"
+                                            style="height: 16px; margin-right: 6px; vertical-align: middle;">
+                                        <strong>Sogang People</strong>
+                                        <span
+                                            style="background-color: #ffd6d6; position: absolute; left: 0; bottom: -3px; height: 4px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span><br>
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1FFU6qle13KTmfLw6lo_hPR1w7uPOuGqH/view?usp=sharing"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        🏆 Grand Prize
+                                        <span
+                                            style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1RZwCfd_85QVnvTPo-msdA2zBcobjPSSI/view?usp=sharing"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        📊 Presentation
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="dated-entry mb-6">
+                    <div class="d-flex justify-content-between">
+                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
+                            <i class="fa-solid fa-trophy" style="margin-right: .5rem;"></i>
+                            <span><b>Grand Prize (Runner-up) <br> <a href="https://www.bigcontest.or.kr/">@ BIG CONTEST
+                                        2022</a></b></span>
+                        </div>
+                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
+                            Sep 2022 - Dec 2022
+                        </div>
+                    </div>
+                    <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
+                        <medium>
+                            <strong> <a href="https://www.nia.or.kr/site/nia_kor/main.do">Nat’l Information
+                                    Society
+                                    Agency</a>,
+                                <a href="https://www.msit.go.kr/index.do">Ministry of Science & Technology</a>
+                            </strong>
+                            <br>
+                            <strong>Jeju Island Travel Route Recommender System for Eco-Friendly & Gen-MZ
+                            </strong>
+                            @ BIGCONTEST Innovation League
+                            <div style="display: flex; justify-content: flex-start;">
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://abit.ly/7mrk0c"
+                                        style="color: #c8102e; text-decoration: none; position: relative;">
+                                        <img src="https://www.sogang.ac.kr/intro/symbol/data/Sogang_UI_symbol.png"
+                                            alt="Sogang Logo"
+                                            style="height: 16px; margin-right: 6px; vertical-align: middle;">
+                                        <strong>Sogang People</strong>
+                                        <span
+                                            style="background-color: #ffd6d6; position: absolute; left: 0; bottom: -3px; height: 4px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span><br>
+
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/151VNDxsmgUTVG-jY-S0Un1kOCpXDBjil/view"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        🏆 Grand Prize
+                                        <!-- (Nat’l Information Society Agency (NIA) President Award) -->
+                                        <span
+                                            style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span><br>
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://underthelights.github.io/DAVENGERS"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        🔗 Official Link
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span><br>
+
+                                <span
+                                    style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
+                                    <a href="https://drive.google.com/file/d/1exwZYFZGr4SERyfWMUiXnnF3c1Q4u3J-/view?usp=sharing"
+                                        style="color: #003478; text-decoration: none; position: relative;">
+                                        🗣️ Speech (Shinhan Bank & World Bank)
+                                        <span
+                                            style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
+                                    </a>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+
+    <!-- Projects -->
+    <div class="container">
+        <p style="font-weight: 500 !important; text-transform: uppercase;">Recent projects</p>
+        <div class="row mt-2">
+            {% for project in projects limit: 4 %}
+            <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
+                <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt=""
+                    style="height: auto; width: 100%;">
+                <p class="pt-2 mt-md-2"
+                    style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{
+                    project.title }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex flex-row-reverse mt-4">
+            <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View
+                All</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- News -->
+        <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+        <div class="row mt-4">
+            {% for new in news limit: 6 %}
+            <!-- Each news item is contained in a fixed height div to maintain uniformity -->
+            <div class="col-12 col-sm-6 mb-4"
+                style="height: 150px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
+                    <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date: "%b %-d,
+                        %Y"
+                        }}</p>
+                    <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.description }}</p>
+                </div>
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-flex flex-row-reverse mt-4">
+            <a href="{{ 'news' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="contact-card"
+            style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; background-color: #f9f9f9;">
+            <h5 style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Contact Information</h5>
+            <p style="font-size: 1rem; font-weight: 400; margin-bottom: 0.5rem;">
+                <strong>Email:</strong> <a href="mailto:kyuhwan.shim@snu.ac.kr"
+                    style="color: #007bff; text-decoration: none;">kyuhwan.shim@snu.ac.kr</a>
+            </p>
+            <p style="font-size: 1rem; font-weight: 400;">
+                <strong>Location:</strong> Bldg. #303, Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea (08826)
+            </p>
+            <div style="margin-top: 1rem;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d779.2546105925076!2d126.95133784693009!3d37.4504466510891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z7ZW064-Z7LKo64uo6rO17ZWZ6rSA!5e0!3m2!1sko!2sus!4v1746367951917!5m2!1sko!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>

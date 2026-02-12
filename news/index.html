@@ -1,0 +1,228 @@
+---
+layout: default
+baseurl: /news
+title: News
+description: Recent news of Kyuhwan Shim
+---
+
+{% assign news = site.data.news.list | sort: 'date' | reverse %}
+
+
+<!-- TODO 
+1. Button을 누르면 원래의 설명되는 link 
+2. pop-up 시 내용이 너무 많으면 잘리는 문제 
+3.  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 공통 스타일 */
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .news-item {
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        
+        /* 리스트 뷰 스타일 */
+        .list-view .news-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            height: 120px; /* 고정된 높이 */
+        }
+
+        .list-view .news-thumbnail {
+            display: none; /* 리스트 뷰에서는 썸네일 숨김 */
+        }
+
+        .news-title, .news-date, .news-description {
+            margin: 0;
+        }
+
+        .news-title {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .news-date {
+            font-size: 0.85rem;
+            color: grey;
+        }
+
+        .news-description {
+            font-size: 0.95rem;
+        }
+
+        /* 액자 뷰 스타일 */
+        .frame-view {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .frame-view .news-item {
+            width: calc(33.333% - 20px); /* three items per row */
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .news-thumbnail {
+            width: 100%; /* responsive */
+            height: 150px; /* fixed height */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+
+        /* 팝업 스타일 */
+        .popup-background {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .popup-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            padding: 20px;
+            background: white;
+            z-index: 1001;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .popup-close {
+            float: right;
+            cursor: pointer;
+        }
+        button#toggleView {
+            --background: #275efe;
+            --text: #fff;
+            --font-size: 16px;
+            --duration: 0.44s;
+            --move-hover: -4px;
+            --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+            --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+            padding: 16px 32px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 24px;
+            display: block;
+            outline: none;
+            appearance: none;
+            border: none;
+            text-decoration: none;
+            font-size: var(--font-size);
+            letter-spacing: 0.5px;
+            background: var(--background);
+            color: var(--text);
+            box-shadow: var(--shadow);
+            transform: translateY(0);
+            transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+        }
+
+        button#toggleView:hover {
+            --shadow: var(--shadow-hover);
+            transform: translateY(var(--move-hover));
+        }
+
+    </style>
+</head>
+<body>
+    
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+    <button id="toggleView">List View</button>
+    <br>
+    <ul class="news-list frame-view">
+        {% for new in news %}
+        <li class="news-item" data-title="{{ new.title }}" data-date="{{ new.date }}" data-description="{{ new.description }}" data-detail="{{ new.detail }}" data-thumbnail="{{ new.thumbnail }}">
+            <div class="news-thumbnail" style="background-image: url('{{ new.thumbnail }}');"></div>
+            <div class="news-content">
+                <p class="news-title">{{ new.title }}</p>
+                <p class="news-date">{{ new.date | date: "%b %-d, %Y" }}</p>
+                <p class="news-description">{{ new.description }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="popup-background">
+    <div class="popup-content">
+        <span class="popup-close">X</span>
+        <h2 id="popup-title"></h2>
+        <p id="popup-date"></p>
+        <img id="popup-thumbnail" style="max-width: 250px;align-items: center;" />
+        <p id="popup-description"></p>
+        <div id="popup-detail"></div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtn = document.getElementById('toggleView');
+    var newsList = document.querySelector('.news-list');
+    var popupBackground = document.querySelector('.popup-background');
+    var popupContent = document.querySelector('.popup-content');
+
+    // 뷰 전환 버튼
+    toggleBtn.addEventListener('click', function() {
+        if (newsList.classList.contains('frame-view')) {
+            newsList.classList.remove('frame-view');
+            newsList.classList.add('list-view');
+            toggleBtn.textContent = 'Frame View';
+        } else {
+            newsList.classList.remove('list-view');
+            newsList.classList.add('frame-view');
+            toggleBtn.textContent = 'List View';
+        }
+    });
+
+    // 뉴스 아이템 클릭 이벤트
+    newsList.addEventListener('click', function(e) {
+        if (e.target.closest('.news-item')) {
+            var item = e.target.closest('.news-item');
+            document.getElementById('popup-title').textContent = item.getAttribute('data-title');
+            document.getElementById('popup-date').textContent = item.getAttribute('data-date');
+            document.getElementById('popup-description').textContent = item.getAttribute('data-description');
+            document.getElementById('popup-detail').innerHTML = item.getAttribute('data-detail');
+            document.getElementById('popup-thumbnail').src = item.getAttribute('data-thumbnail');
+            popupBackground.style.display = 'block';
+        }
+    });
+
+    // 팝업 닫기
+    document.querySelector('.popup-close').addEventListener('click', function() {
+        popupBackground.style.display = 'none';
+    });
+
+    // ESC 키로 팝업 닫기
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            popupBackground.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

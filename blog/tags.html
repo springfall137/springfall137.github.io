@@ -1,0 +1,257 @@
+---
+layout: default
+title: tags
+permalink: /blog/tags/
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: 'Arial', sans-serif;
+          /* Use a modern font */
+          margin-top: 20px;
+          margin-bottom: 10px;
+      }
+
+      .post-title {
+          font-size: 2em; /* 폰트 크기 증가 */
+          font-weight: bold; /* 볼드체 */
+          color: #333; /* 색상 변경 */
+          /* background-color: #f8f8f8; 배경색 추가 */
+          padding: 10px; /* 배경색과 함께 패딩 추가 */
+          box-shadow: inset 0 -20px 0 #bbb7e8;
+          max-width: max-content;
+        }
+
+        /* Updated styling for h1 */
+        h1 {
+          font-size: 1.5em;
+          /* Increase font size for main titles */
+          color: #333333;
+          border-bottom: none;
+          /* Remove bottom border */
+          padding-bottom: 0;
+          /* Adjust padding if needed */
+        }
+
+        h2 {
+          font-size: 1.2em;
+          color: #4a4a4a;
+        }
+
+        h3 {
+          font-size: 1.1em;
+          color: #6a6a6a;
+        }
+
+        h4 {
+          font-size: 0.75em;
+          color: #888888;
+        }
+
+        h5 {
+          font-size: 0.5em;
+          color: #a6a6a6;
+        }
+
+        h6 {
+          font-size: 1em;
+          color: #bcbcbc;
+        }
+
+        /* Add some additional styling if needed */
+        .post-content {
+          line-height: 1.6;
+          /* Improve readability */
+          color: #333333;
+          /* Dark grey color for text */
+        }
+        /* Category Chart Style */
+        .category-chart {
+          font-family: 'Arial', sans-serif;
+          /* width: 100%; */
+          /* height: 100px; Adjust as needed */
+        }
+
+        .category-list li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+
+        button#toggleView {
+            --background: #275efe;
+            --text: #fff;
+            --font-size: 14px;
+            --duration: 0.44s;
+            --move-hover: -4px;
+            --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+            --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+            
+            padding: 8px 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 24px;
+            display: block;
+            outline: none;
+            appearance: none;
+            border: none;
+            text-decoration: none;
+            font-size: var(--font-size);
+            letter-spacing: 0.5px;
+            background: var(--background);
+            color: var(--text);
+            box-shadow: var(--shadow);
+            transform: translateY(0);
+            transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+        }
+
+        button#toggleView:hover {
+            --shadow: var(--shadow-hover);
+            transform: translateY(var(--move-hover));
+        }
+
+        button#post {
+            --background: #fff;
+            --text: #275efe;
+            --font-size: 14px;
+            --duration: 0.44s;
+            --move-hover: -4px;
+            --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+            --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+            
+            padding: 8px 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 24px;
+            display: block;
+            outline: none;
+            appearance: none;
+            border: none;
+            text-decoration: none;
+            font-size: var(--font-size);
+            letter-spacing: 0.5px;
+            background: var(--background);
+            color: var(--text);
+            box-shadow: var(--shadow);
+            transform: translateY(0);
+            transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+        }
+
+        button#post:hover {
+            --shadow: var(--shadow-hover);
+            transform: translateY(var(--move-hover));
+        }
+    </style>
+  </head>
+  <body>
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">TAGS 🏷️</h1>
+    </header>
+
+    <br>
+    <div style="display: flex; gap: 4px; z-index: 1000px;">
+      <button id="toggleView" onclick="location.href='../'">Blog</button> 
+      <button id="post" onclick="location.href='../categories'">CATEGORIES 📚</button> 
+    </div>
+
+    <br><!-- Container for D3.js Visualization -->
+    <svg class="tag-chart"></svg> 
+
+    {% for ttag in site.tags %}
+      <h2 id="{{ ttag[0] | slugify }}">{{ ttag[0] }}</h2>
+      <ul>
+        {% for post in ttag[1] %}
+          <li>
+            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var tagsData = [
+          {% for tag in site.tags %}
+          {"name": "{{ tag[0] }}", "count": {{ tag[1] | size }}},
+          {% endfor %}
+        ];
+    
+        var svg = d3.select('.tag-chart'),
+            width = 500,  // Adjust width as needed
+            height = 200;  // Adjust height as needed
+    
+        svg.attr('width', width)
+           .attr('height', height);
+    
+        // Blue-Purple color scale
+        var color = d3.scaleLinear()
+                      .domain([0, tagsData.length])
+                      .range(["#6a51a3", "#9e9ac8"]);  // Adjust these colors as needed
+    
+        var radiusScale = d3.scaleSqrt()
+                            .domain([0, d3.max(tagsData, function(d) { return d.count; })])
+                            .range([10, 50]); // Adjust radius scale as needed
+    
+        var circles = svg.selectAll('circle')
+                         .data(tagsData)
+                         .enter()
+                         .append('circle');
+    
+        var xCenter = width / 2;
+        var yCenter = height / 2;
+    
+        circles.attr('cx', function(d, i) { return xCenter + i * 50 - 100; })
+               .attr('cy', yCenter)
+               .attr('r', function(d) { return radiusScale(d.count); })
+               .attr('fill', function(d, i) { return color(i); })
+               .attr('opacity', 0.7) // Adjust for better visibility of overlaps
+               .attr('stroke', 'white')
+               .attr('stroke-width', 2);
+    
+        // Add labels to each circle
+        svg.selectAll('text.tag-name')
+           .data(tagsData)
+           .enter()
+           .append('text')
+           .attr('class', 'tag-name')
+           .attr('x', function(d, i) { return xCenter + i * 50 - 100; })
+           .attr('y', yCenter + 5)
+           .attr('text-anchor', 'middle')
+           .text(function(d) { return d.name; })
+           .attr('fill', 'black');
+    
+        // Add post count below each tag
+        svg.selectAll('text.post-count')
+           .data(tagsData)
+           .enter()
+           .append('text')
+           .attr('class', 'post-count')
+           .attr('x', function(d, i) { return xCenter + i * 50 - 100; })
+           .attr('y', yCenter + 25)  // Adjust this value as needed
+           .attr('text-anchor', 'middle')
+           .text(function(d) { return d.count  }) //+ " Posts"; })
+           .attr('fill', 'navy');  // Or use a color that matches the circle
+    
+        // Optional: Update tag headers' colors in the list below to match circles
+        var tagHeaders = document.querySelectorAll('h2');
+        tagHeaders.forEach(function(header, i) {
+          header.style.color = color(i); // Set text color to match corresponding circle
+        });
+    
+      });
+    </script>
+    
+    
+  </body>
+</html>
