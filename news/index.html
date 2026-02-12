@@ -9,8 +9,8 @@ description: Recent news of Dahyun Joo
 
 
 <!-- TODO 
-1. Button???�르�??�래???�명?�는 link 
-2. pop-up ???�용???�무 많으�??�리??문제 
+1. Button???�르�??�래???�명?�는 link 
+2. pop-up ???�용???�무 많으�??�리??문제 
 3.  -->
 
 
@@ -18,7 +18,7 @@ description: Recent news of Dahyun Joo
 <html>
 <head>
     <style>
-        /* 공통 ?��???*/
+        /* 공통 ?��???*/
         .news-list {
             list-style: none;
             padding: 0;
@@ -30,17 +30,17 @@ description: Recent news of Dahyun Joo
         }
 
         
-        /* 리스??�??��???*/
+        /* 리스??�??��???*/
         .list-view .news-item {
             display: flex;
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
-            height: 120px; /* 고정???�이 */
+            height: 120px; /* 고정???�이 */
         }
 
         .list-view .news-thumbnail {
-            display: none; /* 리스??뷰에?�는 ?�네???��? */
+            display: none; /* 리스??뷰에?�는 ?�네???��? */
         }
 
         .news-title, .news-date, .news-description {
@@ -61,7 +61,7 @@ description: Recent news of Dahyun Joo
             font-size: 0.95rem;
         }
 
-        /* ?�자 �??��???*/
+        /* ?�자 �??��???*/
         .frame-view {
             display: flex;
             flex-wrap: wrap;
@@ -85,7 +85,7 @@ description: Recent news of Dahyun Joo
             margin-bottom: 10px;
         }
 
-        /* ?�업 ?��???*/
+        /* ?�업 ?��???*/
         .popup-background {
             display: none;
             position: fixed;
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var popupBackground = document.querySelector('.popup-background');
     var popupContent = document.querySelector('.popup-content');
 
-    // �??�환 버튼
+    // �??�환 버튼
     toggleBtn.addEventListener('click', function() {
         if (newsList.classList.contains('frame-view')) {
             newsList.classList.remove('frame-view');
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ?�스 ?�이???�릭 ?�벤??    newsList.addEventListener('click', function(e) {
+    // ?�스 ?�이???�릭 ?�벤??    newsList.addEventListener('click', function(e) {
         if (e.target.closest('.news-item')) {
             var item = e.target.closest('.news-item');
             document.getElementById('popup-title').textContent = item.getAttribute('data-title');
@@ -209,12 +209,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ?�업 ?�기
+    // ?�업 ?�기
     document.querySelector('.popup-close').addEventListener('click', function() {
         popupBackground.style.display = 'none';
     });
 
-    // ESC ?�로 ?�업 ?�기
+    // ESC ?�로 ?�업 ?�기
     document.addEventListener('keydown', function(event) {
         if (event.key === "Escape") {
             popupBackground.style.display = 'none';

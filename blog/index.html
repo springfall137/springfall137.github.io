@@ -25,17 +25,17 @@ pagination:
     <br>
     <div style="display: flex; gap: 4px;z-index: 1000px">
       <button id="toggleView">List View</button> 
-      <button id="post" onclick="location.href='./categories'">CATEGORIES ?ÔøΩÔøΩ</button> 
-      <button id="post" onclick="location.href='./tags'">TAGS ?ÔøΩÔøΩÔøΩ?/button> 
+      <button id="post" onclick="location.href='./categories'">CATEGORIES ?ìö</button> 
+      <button id="post" onclick="location.href='./tags'">TAGS ?è∑Ô∏?/button> 
     </div>
     <br>
     
     {% assign posts = paginator.posts | default: site.posts %}
     
-    <!-- 'news-list' ?ÔøΩÎûò?ÔøΩÔøΩ? 'ul' ?ÔøΩÍ∑∏??Ï∂îÔøΩ??ÔøΩÎãà?? -->
+    <!-- 'news-list' ?¥Îûò?§Î? 'ul' ?úÍ∑∏??Ï∂îÍ??©Îãà?? -->
     <ul class="news-list" role="list">
       {% for post in posts %}
-      <!-- 'news-item' ?ÔøΩÎûò?ÔøΩÔøΩ? 'li' ?ÔøΩÍ∑∏??Ï∂îÔøΩ??ÔøΩÎãà?? -->
+      <!-- 'news-item' ?¥Îûò?§Î? 'li' ?úÍ∑∏??Ï∂îÍ??©Îãà?? -->
       <li class="news-item">
         <article>
 
@@ -101,7 +101,7 @@ pagination:
             <!-- Ïπ¥ÌÖåÍ≥†Î¶¨ Î≤ÑÌäº -->
             {% if site.feed_show_categories != false and post.categories.size > 0 %}
             <div class="blog-categories">
-              <strong><span>?ÔøΩÔøΩ Categories:</span></strong>
+              <strong><span>?ìö Categories:</span></strong>
               <div class="d-inline">
                 {% for category in post.categories %}
                   <button class="button">
@@ -112,10 +112,10 @@ pagination:
             </div>
             {% endif %}
   
-            <!-- ?ÔøΩÍ∑∏ Î≤ÑÌäº -->
+            <!-- ?úÍ∑∏ Î≤ÑÌäº -->
             {% if site.feed_show_tags != false and post.tags.size > 0 %}
             <div class="blog-tags">
-              <strong><span>?ÔøΩÔøΩÔøΩ?Tags:</span></strong>
+              <strong><span>?è∑Ô∏?Tags:</span></strong>
               <div class="d-inline">
                 {% for tag in post.tags %}
                   <button class="button">
@@ -144,7 +144,7 @@ pagination:
       {% endfor %}
     </ul>
 
-    <!-- ?ÔøΩÏù¥ÏßÄ ?ÔøΩÏù¥??Í¥Ä??ÏΩîÎìú -->
+    <!-- ?òÏù¥ÏßÄ ?§Ïù¥??Í¥Ä??ÏΩîÎìú -->
     {% if paginator.total_pages > 1 %}
     <ul class="pagination main-pager">
       {% if paginator.previous_page %}
