@@ -1,14 +1,14 @@
 {
   "name": "dahyun-joo",
   "title": "Dahyun Joo",
-  "author": "Dahyun Joo <kyuhwan.shim@sogang.ac.kr>",
+  "author": "Dahyun Joo <clairda@snu.ac.kr>",
   "version": "1.8.2",
-  "homepage": "https://underthelights.github.io/",
+  "homepage": "https://springfall137.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/underthelights/underthelights.github.io"
+    "url": "https://github.com/springfall137/springfall137.github.io"
   },
-  "bugs": "https://github.com/underthelights/underthelights.github.io/issues",
+  "bugs": "https://github.com/springfall137/springfall137.github.io/issues",
   "devDependencies": {
     "axios": "^1.1.3",
     "@notionhq/client": "^1.0.4",

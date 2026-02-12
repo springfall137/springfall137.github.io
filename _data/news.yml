@@ -28,19 +28,19 @@ list:
     date: "2023-12-28" # ISO 8601 Format
     description: "Advised by Byoung-Tak Zhang"
     detail: ""
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/5ae5568e-c8bb-4607-bf2d-dbda5dcad797"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/5ae5568e-c8bb-4607-bf2d-dbda5dcad797"
   
   - title: "Samsung Electronics Talent Pool (Top 15%) @ Samsung AI Challenge"
     date: "2023-09-18" # ISO 8601 Format
     description: "Camera-Invariant Domain Adaptation Challenge"
     detail: 
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/daf51073-253f-46dc-862c-e650879c49f6"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/daf51073-253f-46dc-862c-e650879c49f6"
   
   - title: "ML Engineer at Nota Inc."
     date: "2023-03-15" # ISO 8601 Format
     description: "Pleased to be working as a Machine Learning Engineer Intern at ITS Team of <a href='https://nota.ai'>Nota Inc.</a>"
     detail: 
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/e85e854f-a7d7-4c08-81b9-6b7a2c6cef3e"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/e85e854f-a7d7-4c08-81b9-6b7a2c6cef3e"
   
   - title: "Grand Prize in Gangseo-gu Data Competition"
     date: "2023-03-13" # ISO 8601 Format
@@ -52,13 +52,13 @@ list:
     <br><br>‘누네띠네’ 팀은 서울 신용보증재단 데이터를 중심으로 강서구 소상공인 통합 데이터를 구축하고, 신용평가모형을 활용한 강서구 내 20여 개의 행정동/업종별 폐업 위험평점모형 & 위험등급을 산출했다. 이후 Tableau Dashboard를 설계해 분석 결과를 시각화하고, 폐업 위험지역 개선을 위한 정책들을 제안하며 마무리했다. 소규모 지역 상권이라는 차별화된 주제를 선정하여, 신용평가모형을 통해 현업에서 활용 가능한 결과물을 산출했다는 점에서 높은 평가를 받았다.
     <br><br>‘누네띠네’ 팀의 팀원인 박희진(경제 19) 학생은 “이번 강서구 데이터 공모전을 참여하며 학회와 인턴 경험을 통해 발전시킨 데이터 분석 역량을 토대로 공공의 이익과 발전에 기여할 수 있어 기쁘다. 팀원들과 협력하여 소상공인 폐업 위험 5등급 시스템을 구축할 수 있었고, 이는 고객의 신용 등급을 측정하여 대출 승인 여부를 결정하는 주요 모델 중 하나인 신용평가모형을 응용하여 가능했다”라며, “서강대 경영데이터분석학회 INSIGHT의 여러 기수(6, 7, 8기) 간의 시너지 효과를 보여줄 수 있어 뜻깊은 경험이었다”라고 전했다.
     "
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/fefa3ccb-b512-4092-be5e-6c4e932bf7b2"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/fefa3ccb-b512-4092-be5e-6c4e932bf7b2"
   
   - title: "LG Aimers Finalist @ LG AI Research"
     date: "2023-03-31" # ISO 8601 Format
     description: "Finalist in Phase 3 Online Hackathon for Smart Factory Product Quality Status Classification AI Online Hackathon with LG Aimers."
     # detail:
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/73a579d8-6d01-47c4-afc9-5593d0b53db3"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/73a579d8-6d01-47c4-afc9-5593d0b53db3"
   
   - title: "Winner of BIGCONTEST Data Analytics Innovation League 2022"
     date: "2022-12-23" # ISO 8601 Format
@@ -68,13 +68,13 @@ list:
     <br><br>이번 대회 최우수상을 차지한 ‘데벤져스’팀은 본교 경영데이터분석학회 <INSIGHT> 소속 프로젝트 팀으로, 데이터 분석 기반의 새로운 비즈니스 아이디어를 모색하는 이노베이션 분야에 참가하여 신한카드가 주관한 ‘MZ세대가 떠나는 친환경 ESG 제주여행 루트 짜기’ 과제를 수행하였다.
     <br><br>‘데벤져스’팀은 △여행 관련 탄소발자국 계산기 구축 △친환경 제주여행 루트와 팁 제안 △대고객 커뮤니케이션 방안 도출 세 가지 세부 수행 과제에 따라 사용하기 편리한 탄소발자국 계산기를 구축하고, 이를 기반으로 사용자의 여행 스타일을 고려한 친환경 여행 루트 추천 시스템을 설계하였다. 데이터 분석을 기반으로 MZ세대에게 흥미를 유도할 수 있는 차별화된 여행 루트 추천 서비스를 제공했다는 점에서 높은 평가를 받았다.
     <br><br>‘데벤져스’팀의 팀장을 맡은 하정현(경영 18) 학생은 “실제 데이터를 활용하여 사용자에게 유의미한 서비스를 설계하고 구현하는 과정에서 데이터의 무한한 활용 가치에 대해 고민해볼 수 있었다”라며, “함께 고생한 팀원들, 항상 학회원들에게 지원과 격려를 아끼지 않으시는 김명석 지도교수님께 감사드린다”라고 전했다."
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/36c0b9c6-2dc9-4f6a-b95a-73945425119e"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/36c0b9c6-2dc9-4f6a-b95a-73945425119e"
   
   - title: "Senior Designer at OCONNECT"
     date: "2020-06-02" # ISO 8601 Format
     description: "Contributed to a student startup focusing on creating an Easy-Insert Socket OneStep. Achieved recognition in R&D PRJ at Didimdol R&D start-up growth technology in 2022 and won the James Dyson Award '22 KR Ulsan Collegiate Startup Competition."
     # detail:
-    thumbnail: "https://github.com/underthelights/underthelights.github.io/assets/46957634/78793160-6d3a-4294-8e1a-d2ce9b4e0941"
+    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/78793160-6d3a-4294-8e1a-d2ce9b4e0941"
 
 
   # # [양식]

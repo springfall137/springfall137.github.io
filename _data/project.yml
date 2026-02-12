@@ -76,7 +76,7 @@ project:
   - title: Carbon Footprint Calculator & Eco-friendly Travel Route Recommendation (Shinhan Card & NIA)
     image: flight.gif
     award : https://drive.google.com/file/d/1qwXlX3hWxUBZ6qaR1nGZNPtNbhaZPoGl/view?usp=drive_link
-    link: https://underthelights.github.io/DAVENGERS/
+    link: https://springfall137.github.io/DAVENGERS/
     paper: https://drive.google.com/file/d/1peN1vnXzLK5E7Qi40avpIJMANBaVW3FB/view?usp=drive_link
     detail: >
       <p>Developed a Carbon Footprint calculator and Eco-friendly travel route recommendation system in Jeju Island. Awarded the Innovation League Grand Prize (Runner-Up) at BIG CONTEST '22.</p>
@@ -95,7 +95,7 @@ project:
 
   - title: Shell Project
     image: shell-project.jpg
-    code: https://github.com/underthelights/System-Programming-
+    code: https://github.com/springfall137/System-Programming-
     detail: >
       <p>Designed a custom shell that translates user's commands to the Kernel using C language. Built Linux shell with basic commands like 'cd', 'mkdir', 'rmdir', etc.</p>
 
@@ -108,7 +108,7 @@ project:
 
   - title: Stock Server Project
     image: stock-server.jpg
-    code: https://github.com/underthelights/System-Programming-
+    code: https://github.com/springfall137/System-Programming-
     detail: >
       <p>Constructed a concurrent stock server that can be connected by multiple clients for buying or selling stocks concurrently.</p>
 

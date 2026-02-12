@@ -25,8 +25,8 @@ tldr: >
 venue_full: "KCC"
 abstract: "This research aims to develop a dialog system that reflects the persona of a speaker in a dialog system. For this purpose, we designed an abstract architecture based on the Retrieval-Augmented Generation (RAG) architecture, which generates the persona of each speaker based on the content of the conversation and presents a method to use it to personalize the conversation. We focused on developing a persona-based dialog system to address the problem of interactive agents giving inconsistent answers, talking out of context, and sometimes giving uninteresting answers in order to maintain natural conversations with humans. Experimental results show that our proposed method can improve the quality and naturalness of conversations, which suggests that it can contribute to improving the quality of conversational interfaces."
 award: Excellence Paper Award
-page: "https://underthelights.github.io/kirino_page/"
-paper: "https://underthelights.github.io/kirino_page/static/file/kcc24_kirino.pdf"
+page: "https://springfall137.github.io/kirino_page/"
+paper: "https://springfall137.github.io/kirino_page/static/file/kcc24_kirino.pdf"
 slide: "http://cscp2.sogang.ac.kr/CSE4187/CSE4187/UserData/-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C-_%EB%82%B4_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%80_%EC%9D%B4%EB%A0%87%EA%B2%8C_%EA%B7%80%EC%97%AC%EC%9A%B8_%EB%A6%AC%EA%B0%80_%EC%97%86%EC%96%B4.pdf"
 poster: "https://drive.google.com/file/d/1j253FK6H5WaNtwao48PL6uoeviYHcIAt/view"
 image: "/assets/images/publication/kirino.gif"
@@ -88,7 +88,7 @@ type: Vision-Language Model
               <a href="https://github.com/MarsMan13">Geon Choi</a><sup>3??/sup>,
             </span>
             <span class="author-block">
-              <a href="https://underthelights.github.io">Dahyun Joo</a><sup>4??/sup>,
+              <a href="https://springfall137.github.io">Dahyun Joo</a><sup>4??/sup>,
             </span>
             <span class="author-block">
               <a href="https://isds.sogang.ac.kr/page/members">Myoung-Wan Koo</a><sup>5*</sup>
@@ -104,7 +104,7 @@ type: Vision-Language Model
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://underthelights.github.io/kirino_page/static/file/kcc24_kirino.pdf" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://springfall137.github.io/kirino_page/static/file/kcc24_kirino.pdf" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
@@ -122,7 +122,7 @@ type: Vision-Language Model
               </span>
               <!-- Project Page Link. -->
               <span class="link-block">
-                <a href="https://underthelights.github.io/kirino_page" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://springfall137.github.io/kirino_page" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-link"></i>
                   </span>
@@ -144,7 +144,7 @@ type: Vision-Language Model
       <div class="column is-four-fifths">
         <h2 class="title is-3">Project Architecture</h2>
         <div class="publication-video">
-          <img src="https://underthelights.github.io/kirino_page/static/image/kirino_rag.png" alt="Project Architecture">
+          <img src="https://springfall137.github.io/kirino_page/static/image/kirino_rag.png" alt="Project Architecture">
         </div>
       </div>
     </div>
