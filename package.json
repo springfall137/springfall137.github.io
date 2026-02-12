@@ -1,12 +1,12 @@
 {
-  "name": "Kyuhwan Shim",
-  "title": "Kyuhwan Shim",
-  "author": "Kyuhwan Shim <kyuhwan.shim@sogang.ac.kr>",
+  "name": "dahyun-joo",
+  "title": "Dahyun Joo",
+  "author": "Dahyun Joo <kyuhwan.shim@sogang.ac.kr>",
   "version": "1.8.2",
   "homepage": "https://underthelights.github.io/",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/underthelights/underthelights.github.io"
+    "type": "git",
+    "url": "https://github.com/underthelights/underthelights.github.io"
   },
   "bugs": "https://github.com/underthelights/underthelights.github.io/issues",
   "devDependencies": {
@@ -18,9 +18,9 @@
     "notion-to-md": "^2.5.5"
   },
   "scripts": {
-      "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
-      "dev": "grunt watch & npm run start",
-      "boil": "git push boilerplate boilerplate:main",
-      "push": "git push origin main --tag"
+    "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
+    "dev": "grunt watch & npm run start",
+    "boil": "git push boilerplate boilerplate:main",
+    "push": "git push origin main --tag"
   }
 }

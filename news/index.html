@@ -2,15 +2,15 @@
 layout: default
 baseurl: /news
 title: News
-description: Recent news of Kyuhwan Shim
+description: Recent news of Dahyun Joo
 ---
 
 {% assign news = site.data.news.list | sort: 'date' | reverse %}
 
 
 <!-- TODO 
-1. Button을 누르면 원래의 설명되는 link 
-2. pop-up 시 내용이 너무 많으면 잘리는 문제 
+1. Button???�르�??�래???�명?�는 link 
+2. pop-up ???�용???�무 많으�??�리??문제 
 3.  -->
 
 
@@ -18,7 +18,7 @@ description: Recent news of Kyuhwan Shim
 <html>
 <head>
     <style>
-        /* 공통 스타일 */
+        /* 공통 ?��???*/
         .news-list {
             list-style: none;
             padding: 0;
@@ -30,17 +30,17 @@ description: Recent news of Kyuhwan Shim
         }
 
         
-        /* 리스트 뷰 스타일 */
+        /* 리스??�??��???*/
         .list-view .news-item {
             display: flex;
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
-            height: 120px; /* 고정된 높이 */
+            height: 120px; /* 고정???�이 */
         }
 
         .list-view .news-thumbnail {
-            display: none; /* 리스트 뷰에서는 썸네일 숨김 */
+            display: none; /* 리스??뷰에?�는 ?�네???��? */
         }
 
         .news-title, .news-date, .news-description {
@@ -61,7 +61,7 @@ description: Recent news of Kyuhwan Shim
             font-size: 0.95rem;
         }
 
-        /* 액자 뷰 스타일 */
+        /* ?�자 �??��???*/
         .frame-view {
             display: flex;
             flex-wrap: wrap;
@@ -85,7 +85,7 @@ description: Recent news of Kyuhwan Shim
             margin-bottom: 10px;
         }
 
-        /* 팝업 스타일 */
+        /* ?�업 ?��???*/
         .popup-background {
             display: none;
             position: fixed;
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var popupBackground = document.querySelector('.popup-background');
     var popupContent = document.querySelector('.popup-content');
 
-    // 뷰 전환 버튼
+    // �??�환 버튼
     toggleBtn.addEventListener('click', function() {
         if (newsList.classList.contains('frame-view')) {
             newsList.classList.remove('frame-view');
@@ -197,8 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 뉴스 아이템 클릭 이벤트
-    newsList.addEventListener('click', function(e) {
+    // ?�스 ?�이???�릭 ?�벤??    newsList.addEventListener('click', function(e) {
         if (e.target.closest('.news-item')) {
             var item = e.target.closest('.news-item');
             document.getElementById('popup-title').textContent = item.getAttribute('data-title');
@@ -210,12 +209,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 팝업 닫기
+    // ?�업 ?�기
     document.querySelector('.popup-close').addEventListener('click', function() {
         popupBackground.style.display = 'none';
     });
 
-    // ESC 키로 팝업 닫기
+    // ESC ?�로 ?�업 ?�기
     document.addEventListener('keydown', function(event) {
         if (event.key === "Escape") {
             popupBackground.style.display = 'none';
@@ -226,3 +225,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+

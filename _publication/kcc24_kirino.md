@@ -7,13 +7,13 @@ authors:
   - Ganghun Kim
   - Hyunjae Kim
   - Geon Choi
-  - Kyuhwan Shim
+  - Dahyun Joo
   - Myoung-Wan Koo
 coauthors:
   - Ganghun Kim
   - Hyunjae Kim
   - Geon Choi
-  - Kyuhwan Shim
+  - Dahyun Joo
  
 venue: >
   <a href="https://www.kiise.or.kr/conference/kcc/2025/"> <strong>Korean Computer Congress 2024</strong>  </a><br>
@@ -36,7 +36,7 @@ category:
 bibtex: |-
   @article{kirino2024,
     title={KIRINO: An Interactive Chatbot System for User Persona},
-    author={Kyuhwan Shim and Ganghun Kim and Hyunjae Kim and Geon Choi and Myoung-Wan Koo},
+    author={Dahyun Joo and Ganghun Kim and Hyunjae Kim and Geon Choi and Myoung-Wan Koo},
     journal={Korea Computer Congress 2024},
     year={2024},
     month={April},
@@ -79,16 +79,16 @@ type: Vision-Language Model
           <h1 class="title is-1 publication-title">KIRINO: An Interactive Chatbot System for User Persona</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/kanghun0819">Ganghun Kim</a><sup>1†</sup>,
+              <a href="https://github.com/kanghun0819">Ganghun Kim</a><sup>1??/sup>,
             </span>
             <span class="author-block">
-              <a href="https://typednow.com/">Hyunjae Kim</a><sup>2†</sup>,
+              <a href="https://typednow.com/">Hyunjae Kim</a><sup>2??/sup>,
             </span>
             <span class="author-block">
-              <a href="https://github.com/MarsMan13">Geon Choi</a><sup>3†</sup>,
+              <a href="https://github.com/MarsMan13">Geon Choi</a><sup>3??/sup>,
             </span>
             <span class="author-block">
-              <a href="https://underthelights.github.io">Kyuhwan Shim</a><sup>4†</sup>,
+              <a href="https://underthelights.github.io">Dahyun Joo</a><sup>4??/sup>,
             </span>
             <span class="author-block">
               <a href="https://isds.sogang.ac.kr/page/members">Myoung-Wan Koo</a><sup>5*</sup>
@@ -98,7 +98,7 @@ type: Vision-Language Model
             <span class="author-block"><sup></sup>Sogang University, Computer Science and Engineering</span>
             <span class="author-block"><sup></sup>Korea</span>
           </div>
-          <p><sup>†</sup>These authors contributed equally to this work.</p>
+          <p><sup>??/sup>These authors contributed equally to this work.</p>
           <p><sup>*</sup>Corresponding author.</p>
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -164,3 +164,4 @@ type: Vision-Language Model
     <!--/ Abstract. -->
   </div>
 </section>
+

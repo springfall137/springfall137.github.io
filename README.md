@@ -1,4 +1,4 @@
-### Greetings! I'm Kyuhwan Shim. 🤗 
+### Greetings! I'm Dahyun Joo. 🤗 
 
 
 🎓 I'm a graduate student at the [Graduate School of AI](https://gsai.snu.ac.kr), Seoul National University, advised by [Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/~btzhang).

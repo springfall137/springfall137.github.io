@@ -4,7 +4,7 @@ title: "ABCD"
 year: 2020
 month: 4
 authors:
-  - Kyuhwan Shim
+  - Dahyun Joo
 venue: arXiv
 venue_full: "XXX"
 abstract: "XXX"
