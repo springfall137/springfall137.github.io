@@ -1,17 +1,17 @@
 ### Greetings! I'm Dahyun Joo. 🤗 
 
 
-🎓 I'm a graduate student at the [Graduate School of AI](https://gsai.snu.ac.kr), Seoul National University, advised by [Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/~btzhang).
+🎓 I'm a graduate student at the [Department of Mechanical Engineering](https://me.snu.ac.kr), Seoul National University, working at AISDL (AI-driven Simulation and Design Lab) under [Prof. Do-Nyun Kim](https://aisdl.snu.ac.kr).
 
 
-🤖 I'm broadly interested in **robotics**, **multimodal learning**, and **physical intelligence**.  My work focuses on developing **vision-language-action (VLA)** models to enable **generalist robot policies** that can robustly **perceive, reason, and act** in the real world.  
+🔬 I'm broadly interested in **computational mechanics**, **AI-driven design**, and **simulation-based optimization**. My work focuses on developing advanced simulation and design methodologies that leverage artificial intelligence for engineering applications.
 
 📫 clairda@snu.ac.kr  
 🔗 [Website](https://springfall137.github.io)
 
 
 ## Contact
-kyuhwan.shim (at) snu (dot) ac (dot) kr
+clairda@snu.ac.kr
 
 
 ## Links
