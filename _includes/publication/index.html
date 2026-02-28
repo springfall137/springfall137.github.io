@@ -1,78 +1,12 @@
-<style>
-    .publication-list {
-        padding: 2rem 0;
-    }
-
-    .pub-item {
-        margin-bottom: 2rem;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .pub-item:last-child {
-        border-bottom: none;
-    }
-
-    .pub-title {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
-
-    .pub-venue {
-        font-style: italic;
-        color: #666;
-        margin-bottom: 0.5rem;
-    }
-
-    .pub-authors {
-        font-size: 0.95rem;
-        color: #444;
-    }
-
-    .pub-link {
-        display: inline-block;
-        margin-top: 0.5rem;
-        padding: 0.3rem 1rem;
-        background: #003478;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 0.9rem;
-    }
-
-    .pub-link:hover {
-        background: #002456;
-        color: white;
-    }
-</style>
-
-<div class="container publication-list">
-    <div class="row">
+<div class="container py-4">
+    <div class="row pb-2">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Publication</h2>
+    </div>
+    <div class="row mt-3">
         <div class="col-12">
-            <h2 style="font-weight: 800; text-transform: uppercase; margin-bottom: 2rem;">Publications</h2>
+            <p style="font-size: 1rem; font-weight: 300; color: #6b7280;">
+                Publication list will be updated soon.
+            </p>
         </div>
     </div>
-
-    {% if site.publication.size > 0 %}
-    {% assign pubs_sorted = site.publication | sort: 'year' | reverse %}
-    {% for pub in pubs_sorted %}
-    <div class="pub-item">
-        <div class="pub-title">{{ pub.title }}</div>
-        {% if pub.venue %}
-        <div class="pub-venue">{{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}</div>
-        {% endif %}
-        {% if pub.authors %}
-        <div class="pub-authors">{{ pub.authors | join: ', ' }}</div>
-        {% endif %}
-        {% if pub.paper %}
-        <a href="{{ pub.paper }}" class="pub-link" target="_blank">View Paper</a>
-        {% endif %}
-    </div>
-    {% endfor %}
-    {% else %}
-    <div class="col-12">
-        <p style="color: #666; font-style: italic;">Publication list will be updated soon.</p>
-    </div>
-    {% endif %}
 </div>

@@ -1,27 +1,19 @@
 ---
-layout: page
+layout: default
 title: Publication
 permalink: /publication/
+description: Publications by Dahyun Joo
 ---
 
 <div class="container py-4">
     <div class="row pb-2">
-        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Publications</h2>
-        <p>Publication list will be updated soon.</p>
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Publication</h2>
     </div>
-
-    <div class="row mt-4">
-        {% for pub in site.publication %}
-        <div class="col-12 mb-4">
-            <h4>{{ pub.title }}</h4>
-            <p><em>{{ pub.venue }}</em> - {{ pub.year }}</p>
-            {% if pub.authors %}
-            <p>Authors: {{ pub.authors | join: ', ' }}</p>
-            {% endif %}
-            {% if pub.paper %}
-            <a href="{{ pub.paper }}" target="_blank">Paper</a>
-            {% endif %}
+    <div class="row mt-3">
+        <div class="col-12">
+            <p style="font-size: 1rem; font-weight: 300; color: #6b7280;">
+                Publication list will be updated soon.
+            </p>
         </div>
-        {% endfor %}
     </div>
 </div>

@@ -1,0 +1,51 @@
+---
+layout: default
+title: Blog
+description: Blog of Dahyun Joo
+---
+
+<div class="container py-4">
+    <div class="row pb-3">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Blog</h2>
+        <p style="font-size: 0.9rem; font-weight: 300; color: #6b7280; margin-top: 0.4rem;">
+            Thoughts on research, science, and beyond.
+        </p>
+    </div>
+
+    <div class="row mt-2">
+        {% if site.posts.size == 0 %}
+        <div class="col-12">
+            <p style="font-size: 1rem; font-weight: 300; color: #9ca3af;">No posts yet. Stay tuned!</p>
+        </div>
+        {% else %}
+        <div class="col-12">
+            {% for post in site.posts %}
+            <div style="padding: 1.2rem 0; border-bottom: 1px solid #e5e7eb;">
+                <p style="font-size: 0.8rem; font-weight: 300; color: #9ca3af; margin-bottom: 0.2rem;">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                    {% if post.categories.size > 0 %}
+                    &nbsp;·&nbsp;
+                    {% for cat in post.categories %}
+                    <span style="background:#f3f4f6; border-radius:4px; padding: 1px 6px; font-size: 0.75rem;">{{ cat
+                        }}</span>
+                    {% endfor %}
+                    {% endif %}
+                </p>
+                <a href="{{ post.url | absolute_url }}" style="text-decoration: none; color: inherit;">
+                    <p style="font-size: 1.05rem; font-weight: 500; margin-bottom: 0.3rem; line-height: 1.4;">{{
+                        post.title }}</p>
+                </a>
+                {% if post.subtitle %}
+                <p style="font-size: 0.9rem; font-weight: 300; color: #6b7280; margin-bottom: 0.4rem;">{{ post.subtitle
+                    }}</p>
+                {% endif %}
+                <p style="font-size: 0.88rem; font-weight: 300; color: #4b5563; line-height: 1.55;">
+                    {{ post.excerpt | strip_html | truncatewords: 40 }}
+                    <a href="{{ post.url | absolute_url }}" style="font-weight: 400;">[Read more]</a>
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
