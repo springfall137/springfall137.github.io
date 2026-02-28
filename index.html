@@ -551,9 +551,10 @@ description: Department of Mechanical Engineering, Seoul National University
             {% assign img_url = '/assets/images/project/' | append: project.image | relative_url %}
             {% if project.image contains '.mp4' %}
             <video src="{{ img_url }}" autoplay loop muted playsinline
-                style="height: auto; width: 100%; border-radius: 8px; object-fit: cover;"></video>
+                style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;"></video>
             {% else %}
-            <img src="{{ img_url }}" alt="" style="height: auto; width: 100%; border-radius: 8px; object-fit: cover;">
+            <img src="{{ img_url }}" alt=""
+                style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
             {% endif %}
             <p class="pt-2 mt-md-2"
                 style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{
