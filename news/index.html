@@ -19,27 +19,6 @@ description: News and updates from Dahyun Joo
         border-bottom: none;
     }
 
-    .news-thumb {
-        flex-shrink: 0;
-        width: 80px;
-        height: 80px;
-        border-radius: 8px;
-        object-fit: cover;
-        background-color: #f3f4f6;
-        border: 1px solid #e5e7eb;
-    }
-
-    .news-thumb-placeholder {
-        flex-shrink: 0;
-        width: 80px;
-        height: 80px;
-        border-radius: 8px;
-        background-color: #f3f4f6;
-        border: 1px solid #e5e7eb;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .news-content {
         flex: 1;
@@ -81,17 +60,6 @@ description: News and updates from Dahyun Joo
             {% for item in news %}
             <div class="news-entry">
 
-                {% if item.thumbnail and item.thumbnail != "" %}
-                <img src="{{ item.thumbnail }}" alt="{{ item.title }}" class="news-thumb"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="news-thumb-placeholder" style="display:none;">
-                    <i class="fa-regular fa-newspaper" style="font-size: 1.4rem; color: #d1d5db;"></i>
-                </div>
-                {% else %}
-                <div class="news-thumb-placeholder">
-                    <i class="fa-regular fa-newspaper" style="font-size: 1.4rem; color: #d1d5db;"></i>
-                </div>
-                {% endif %}
 
                 <div class="news-content">
                     <p class="news-date">{{ item.date | date: "%b %Y" }}</p>
