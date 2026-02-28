@@ -1,17 +1,17 @@
 project:
   - title: "Samsung Display: Bistable Kirigami Integration"
     description: "Curved Display Corner Integration"
-    image: "samsung_display.jpg"
+    image: "samsung_display.png"
     collaborators:
       
   - title: "LG Electronics: Kirigami-Enhanced Packaging"
     description: "Pulp-Mold Packaging for Impact Absorption"
-    image: "lg_electronics.jpg"
+    image: "lg_electronics.png"
     collaborators:
       
   - title: "AI Factory Hackathon"
     description: "AI Model Development"
-    image: "ai_factory.jpg"
+    image: "ai_factory.gif"
     collaborators:
 
   - title: "Semiconductor Solverton Competition"

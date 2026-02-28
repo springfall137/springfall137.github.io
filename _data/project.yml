@@ -1,6 +1,6 @@
 project:
   - title: "Samsung Display: Bistable Kirigami Integration for Curved Display Corner"
-    image: samsung_display.jpg
+    image: samsung_display.png
     detail: >
       <p>Integrated a bistable kirigami pattern into curved-display corner regions to enable controlled shape transition and robustness under constrained geometry.</p>
       <p>Iterated pattern parameterization and stability-focused analysis to satisfy corner curvature and boundary constraints; prioritized manufacturability and repeatable behavior.</p>
@@ -13,7 +13,7 @@ project:
     id: samsung_display
 
   - title: "LG Electronics: Kirigami-Enhanced Pulp-Mold Packaging for Impact Absorption"
-    image: lg_electronics.jpg
+    image: lg_electronics.png
     detail: >
       <p>Applied kirigami patterns to pulp-mold packaging to increase deformation stroke and improve energy absorption without adding bulk material.</p>
       <p>Developed practical pattern guidelines considering pulp-mold forming constraints; summarized expected mechanical behavior and prototyping directions.</p>
@@ -26,7 +26,7 @@ project:
     id: lg_electronics
 
   - title: "AI Factory Hackathon"
-    image: ai_factory.jpg
+    image: ai_factory.gif
     detail: >
       <p>Participated in the AI Factory Hackathon to develop innovative AI models designed to solve practical and real-world problems.</p>
       <p>Focused on efficient data preprocessing, model tuning, and algorithm configuration to provide optimal solutions under the given competition scenarios.</p>
