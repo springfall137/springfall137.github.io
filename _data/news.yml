@@ -2,43 +2,23 @@ list:
 
   - title: "M.S. Student @ AISDL, Seoul National University"
     date: "2025-03-01"
-    description: "Starting M.S./Ph.D. integrated course in Mechanical Engineering at Seoul National University, advised by Prof. Do-Nyun Kim at AI-driven Simulation and Design Lab (AISDL)."
+    description: "Starting M.S./Ph.D. integrated course in Mechanical Engineering, advised by Prof. Do-Nyun Kim at AI-driven Simulation and Design Lab (AISDL)."
     thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  - title: "Intern @ STATION F, Paris"
-    date: "2025-02-01"
-    description: "Worked as an intern at STATION F, one of the world's largest startup campuses, located in Paris, France."
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Station_F_logo.svg/1200px-Station_F_logo.svg.png"
-
-  - title: "B.S. in Physics (Minor in Mechanical Engineering) — Seoul National University"
+  - title: "B.S. in Physics — Seoul National University"
     date: "2025-02-28"
-    description: "Graduated from Seoul National University with a B.S. in Physics (Minor in Mechanical Engineering). Bachelor's thesis: 'wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation Functions'."
+    description: "Graduated from Seoul National University with a B.S. in Physics (Minor in Mechanical Engineering). Thesis: 'wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation Functions'."
     thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
   - title: "Semiconductor Solverton Competition — Top Prize (Deputy Prime Minister & Education Minister Prize)"
     date: "2024-12-01"
-    description: "Received the top prize (부총리 겸 교육부장관상) at the Semiconductor Solverton Competition for optimizing AC performance of GAA NS FET by analyzing resistance, capacitance, and frequency gain compared to FinFET through structural modeling and TCAD simulation."
+    description: "Received the top prize at the Semiconductor Solverton Competition for optimizing AC performance of GAA NS FET through structural modeling and TCAD simulation."
     thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  - title: "Seoul National University Semiconductor Specialized College Scholarship"
-    date: "2024-09-01"
-    description: "Awarded the SNU Semiconductor Specialized College Scholarship in recognition of academic excellence and research contributions in the semiconductor field."
-    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
-
-  - title: "Intern @ Thales Korea"
-    date: "2024-03-01"
-    description: "Worked as an intern at Thales Korea (Mar. 2024 ~ Jul. 2024), a global leader in defense and aerospace technology."
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thales_Logo.svg/1200px-Thales_Logo.svg.png"
-
-  - title: "Undergraduate Researcher @ SNU MetaStructure Lab"
-    date: "2024-09-01"
-    description: "Worked as an undergraduate intern at SNU MetaStructure Lab (Sep. 2024 ~ Jan. 2025), advised by Prof. J. H. Oh. Researched waves, metamaterial, acoustic finite element method, and AI-driven topology optimization."
-    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
-
-  - title: "Undergraduate Researcher @ SNU Transformative Architecture Lab"
-    date: "2023-10-01"
-    description: "Worked as an undergraduate intern at SNU Transformative Architecture Lab (Oct. 2023 ~ Jan. 2024), advised by Prof. J.K. Yang. Performed FEA using Abaqus for deployable bistable dodecahedral large origami structures."
-    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
+  - title: "Discharged from ROKAF — Sergeant"
+    date: "2023-04-01"
+    description: "Completed compulsory military service in the Republic of Korea Air Force at the 15th Special Missions Wing, 15th Weather Squadron. Discharged as Sergeant after serving from Jul. 2021."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
 
   - title: "ROKAF Entrepreneurship Contest — Advanced to MND Finals"
     date: "2022-10-01"
@@ -50,25 +30,10 @@ list:
     description: "Achieved a perfect score (100/100) and 1st grade on the Korean History Proficiency Test (한국사능력검정시험) while serving in the Republic of Korea Air Force."
     thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
 
-  - title: "Compulsory Military Service — Republic of Korea Air Force"
-    date: "2021-07-01"
-    description: "Served in the Republic of Korea Air Force (Jul. 2021 ~ Apr. 2023) at the 15th Special Missions Wing, 15th Weather Squadron. Discharged as Sergeant."
-    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
-
-  - title: "President of Student Council — SNU Department of Physics and Astronomy"
+  - title: "President of Student Council — SNU Dept. of Physics and Astronomy"
     date: "2020-11-01"
     description: "Elected and served as President of the Student Council at the SNU Department of Physics and Astronomy (Nov. 2020 ~ Jul. 2021)."
     thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
-
-  - title: "Emoticon & Items Brand 'jjooda' — Founded"
-    date: "2020-04-01"
-    description: "Founded and operated an original emoticon and merchandise brand 'jjooda' (Apr. 2020 ~ Jan. 2021). Designed character IP and produced emoticon packages."
-    thumbnail: ""
-
-  - title: "CFD Engineer @ Rocket Pre-startup 'Kspace'"
-    date: "2019-12-01"
-    description: "Worked as a CFD Engineer specializing in rocket injector design at the pre-startup 'Kspace' (Dec. 2019 ~ Feb. 2020)."
-    thumbnail: ""
 
   # [양식]
   # - title:
