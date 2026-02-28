@@ -1,85 +1,77 @@
 list:
-  - title: "Research Scientist Intern @ LG AI Research"
-    date: "2025-11-01"
-    description: "Joining LG AI Research as a Research Scientist Intern in the Vision Lab."
-    thumbnail: "https://www.lgresearch.ai/img/common/lgresearch.jpg"
 
-  - title: "Paper Accepted to RSS 2025 (Main Conference)"
-    date: "2025-04-05"
-    description: "Our paper was accepted to the 2025 Robotics: Science and Systems (RSS) Conference. . The paper introduces a novel vision-language-action framework that enables robotic policies to be trained using natural language supervision."
-    thumbnail: "https://roboticsconference.org/images/RSS2025-logo.png"
+  - title: "M.S. Student @ AISDL, Seoul National University"
+    date: "2025-03-01"
+    description: "Starting M.S./Ph.D. integrated course in Mechanical Engineering at Seoul National University, advised by Prof. Do-Nyun Kim at AI-driven Simulation and Design Lab (AISDL)."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  - title: "CLIP-RT Accepted to LangRob@CoRL 2024"
-    date: "2024-10-19"
-    description: "Our paper was accepted to the Third Workshop on Language and Robot Learning (LangRob) at CoRL 2024. The work presents a new approach to training language-conditioned robotic policies through natural language supervision."
-    thumbnail: "https://i.ytimg.com/vi/kL7izv6PXS0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCBJps02qETXyH_rdn0abGFry6AKQ"
+  - title: "Intern @ STATION F, Paris"
+    date: "2025-02-01"
+    description: "Worked as an intern at STATION F, one of the world's largest startup campuses, located in Paris, France."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Station_F_logo.svg/1200px-Station_F_logo.svg.png"
 
-  - title: "RoboCup@Home 2024 – 2nd & 3rd Place in OPL and DSPL"
-    date: "2024-07-21"
-    description: "Our team, TIDYBOY, won 🥈2nd place in the Open Platform League (OPL) and 🥉3rd place in the Domestic Standard Platform League (DSPL) at RoboCup@Home 2024, held in Eindhoven, Netherlands. The competition emphasized integrated perception, planning, and manipulation in a domestic environment."
-    thumbnail: "https://media.licdn.com/dms/image/v2/D4E22AQGhVnntilvjvA/feedshare-shrink_800/feedshare-shrink_800/0/1709292911621?e=2147483647&v=beta&t=XWxUZt6DXwXVS5LI4M8EnVLJemRTgArhU6zkcw313z4"
+  - title: "B.S. in Physics (Minor in Mechanical Engineering) — Seoul National University"
+    date: "2025-02-28"
+    description: "Graduated from Seoul National University with a B.S. in Physics (Minor in Mechanical Engineering). Bachelor's thesis: 'wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation Functions'."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  - title: "Excellence Undergraduate Paper Award @ Korea Computer Congress 2024"
-    date: "2024-06-27"
-    description: "Received the Best Paper Award at the Korean Computer Congress (KCC) 2024 for the paper 'KIRINO : An Interactive Chatbot System for User Persona'."
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYAjFh0-bx6nXTHaJrv_386MT3276lAaUbWg&s"
+  - title: "Semiconductor Solverton Competition — Top Prize (Deputy Prime Minister & Education Minister Prize)"
+    date: "2024-12-01"
+    description: "Received the top prize (부총리 겸 교육부장관상) at the Semiconductor Solverton Competition for optimizing AC performance of GAA NS FET by analyzing resistance, capacitance, and frequency gain compared to FinFET through structural modeling and TCAD simulation."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  - title: "Undergraduate Researcher @ BI Lab, Seoul Nat'l U."
-    date: "2023-12-28" # ISO 8601 Format
-    description: "Advised by Byoung-Tak Zhang"
-    detail: ""
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/5ae5568e-c8bb-4607-bf2d-dbda5dcad797"
-  
-  - title: "Samsung Electronics Talent Pool (Top 15%) @ Samsung AI Challenge"
-    date: "2023-09-18" # ISO 8601 Format
-    description: "Camera-Invariant Domain Adaptation Challenge"
-    detail: 
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/daf51073-253f-46dc-862c-e650879c49f6"
-  
-  - title: "ML Engineer at Nota Inc."
-    date: "2023-03-15" # ISO 8601 Format
-    description: "Pleased to be working as a Machine Learning Engineer Intern at ITS Team of <a href='https://nota.ai'>Nota Inc.</a>"
-    detail: 
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/e85e854f-a7d7-4c08-81b9-6b7a2c6cef3e"
-  
-  - title: "Grand Prize in Gangseo-gu Data Competition"
-    date: "2023-03-13" # ISO 8601 Format
-    description: "Awarded the Grand Prize for developing a Risk Rating Model for Small Business Owners in Gangseo-gu using the Credit Rating Model. This project was awarded by the Mayor of Gangseo-gu Office."
-    detail: "
-    지난 4월 26일(수), 강서구청이 주최한 ‘2023년 강서구 빅데이터 활용 공모전’에서 본교 ‘누네띠네’ 팀(박희진(경제 19), 방미정(경영 18), 심규환(컴공 19))이 부문 1위에 올라 최우수상과 부상으로 상금을 받았다.
-    <br><br>2022년부터 개최되어 올해로 두 번째를 맞이한 ‘강서구 빅데이터 활용 공모전’은 개방된 공공데이터를 활용하여 구민의 생활불편 해결 및 공공 이익·발전에 기여할 창의적 빅데이터 활용 아이디어와 서비스를 발굴하는 것을 목표로 하는 빅데이터 공모전이다.
-    <br><br>이번 대회 1위를 차지한 ‘누네띠네’ 팀은 본교 경영데이터분석학회 INSIGHT 소속 팀으로, ‘신용평가모형을 활용한 강서구 소상공인 폐업 위험 평점화 모형 및 위험 등급 산정’을 주제로 프로젝트를 진행해 우수한 성취를 거두었다.\
-    <br><br>‘누네띠네’ 팀은 서울 신용보증재단 데이터를 중심으로 강서구 소상공인 통합 데이터를 구축하고, 신용평가모형을 활용한 강서구 내 20여 개의 행정동/업종별 폐업 위험평점모형 & 위험등급을 산출했다. 이후 Tableau Dashboard를 설계해 분석 결과를 시각화하고, 폐업 위험지역 개선을 위한 정책들을 제안하며 마무리했다. 소규모 지역 상권이라는 차별화된 주제를 선정하여, 신용평가모형을 통해 현업에서 활용 가능한 결과물을 산출했다는 점에서 높은 평가를 받았다.
-    <br><br>‘누네띠네’ 팀의 팀원인 박희진(경제 19) 학생은 “이번 강서구 데이터 공모전을 참여하며 학회와 인턴 경험을 통해 발전시킨 데이터 분석 역량을 토대로 공공의 이익과 발전에 기여할 수 있어 기쁘다. 팀원들과 협력하여 소상공인 폐업 위험 5등급 시스템을 구축할 수 있었고, 이는 고객의 신용 등급을 측정하여 대출 승인 여부를 결정하는 주요 모델 중 하나인 신용평가모형을 응용하여 가능했다”라며, “서강대 경영데이터분석학회 INSIGHT의 여러 기수(6, 7, 8기) 간의 시너지 효과를 보여줄 수 있어 뜻깊은 경험이었다”라고 전했다.
-    "
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/fefa3ccb-b512-4092-be5e-6c4e932bf7b2"
-  
-  - title: "LG Aimers Finalist @ LG AI Research"
-    date: "2023-03-31" # ISO 8601 Format
-    description: "Finalist in Phase 3 Online Hackathon for Smart Factory Product Quality Status Classification AI Online Hackathon with LG Aimers."
-    # detail:
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/73a579d8-6d01-47c4-afc9-5593d0b53db3"
-  
-  - title: "Winner of BIGCONTEST Data Analytics Innovation League 2022"
-    date: "2022-12-23" # ISO 8601 Format
-    description: "Received the Grand Prize (Runner-Up) for the project on Carbon Footprint Calculator & Eco-friendly JEJU travel route Recommender System, showing a deep commitment to environmental sustainability and data-driven solutions."
-    detail: "지난 12월 21일(수), 한국지능정보사회진흥원(이하 NIA)·과학기술정보통신부(이하 과기부)가 주최한 ‘제10회 2022 빅콘테스트’(이하 빅콘테스트) 데이터분석리그 이노베이션분야에서 본교 ‘데벤져스’팀(고경주(경영 19), 나경훈(수학 16), 심규환(컴공 19), 정혜나(경영 20), 하정현(경영 18))이 부문 2위에 올라 최우수상(한극지능정보사회진흥원장상)과 상금 300만 원을 받았다. 시상식은 코엑스(COEX) 그랜드 인터컨티넨탈 파르나스 오키드홀에서 쇼케이스와 함께 진행되었다.
-    <br><br>2013년부터 매년 개최되어 올해 10주년을 맞이한 ‘빅콘테스트’는 공공 및 민간기업 데이터 활용 촉진, 데이터를 활용한 새로운 비즈니스 모델 및 참신한 아이디어 제시, 빅데이터 우수인력 발굴 및 양성 등을 목표로 하는 데이터 분석 경진대회이다. 이번 대회는 신한카드, LG유플러스, 핀다, 와이즈넛, 제주관광공사, CJ올리브네트웍스, 한국정보통신진흥협회 등 7개 기업이 공동으로 주관했으며, 빅데이터포럼이 후원하였다. 지난 8월 참가 모집을 시작으로, 1차 서류 심사 및 2차 발표 평가를 거쳐 이노베이션 분야 총 8팀, 그 외 분야 20팀이 수상자로 선정되었다.
-    <br><br>이번 대회 최우수상을 차지한 ‘데벤져스’팀은 본교 경영데이터분석학회 <INSIGHT> 소속 프로젝트 팀으로, 데이터 분석 기반의 새로운 비즈니스 아이디어를 모색하는 이노베이션 분야에 참가하여 신한카드가 주관한 ‘MZ세대가 떠나는 친환경 ESG 제주여행 루트 짜기’ 과제를 수행하였다.
-    <br><br>‘데벤져스’팀은 △여행 관련 탄소발자국 계산기 구축 △친환경 제주여행 루트와 팁 제안 △대고객 커뮤니케이션 방안 도출 세 가지 세부 수행 과제에 따라 사용하기 편리한 탄소발자국 계산기를 구축하고, 이를 기반으로 사용자의 여행 스타일을 고려한 친환경 여행 루트 추천 시스템을 설계하였다. 데이터 분석을 기반으로 MZ세대에게 흥미를 유도할 수 있는 차별화된 여행 루트 추천 서비스를 제공했다는 점에서 높은 평가를 받았다.
-    <br><br>‘데벤져스’팀의 팀장을 맡은 하정현(경영 18) 학생은 “실제 데이터를 활용하여 사용자에게 유의미한 서비스를 설계하고 구현하는 과정에서 데이터의 무한한 활용 가치에 대해 고민해볼 수 있었다”라며, “함께 고생한 팀원들, 항상 학회원들에게 지원과 격려를 아끼지 않으시는 김명석 지도교수님께 감사드린다”라고 전했다."
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/36c0b9c6-2dc9-4f6a-b95a-73945425119e"
-  
-  - title: "Senior Designer at OCONNECT"
-    date: "2020-06-02" # ISO 8601 Format
-    description: "Contributed to a student startup focusing on creating an Easy-Insert Socket OneStep. Achieved recognition in R&D PRJ at Didimdol R&D start-up growth technology in 2022 and won the James Dyson Award '22 KR Ulsan Collegiate Startup Competition."
-    # detail:
-    thumbnail: "https://github.com/springfall137/springfall137.github.io/assets/46957634/78793160-6d3a-4294-8e1a-d2ce9b4e0941"
+  - title: "Seoul National University Semiconductor Specialized College Scholarship"
+    date: "2024-09-01"
+    description: "Awarded the SNU Semiconductor Specialized College Scholarship in recognition of academic excellence and research contributions in the semiconductor field."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
+  - title: "Intern @ Thales Korea"
+    date: "2024-03-01"
+    description: "Worked as an intern at Thales Korea (Mar. 2024 ~ Jul. 2024), a global leader in defense and aerospace technology."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thales_Logo.svg/1200px-Thales_Logo.svg.png"
 
-  # # [양식]
-  # - title: 
-  #   date: 
-  #   description: 
+  - title: "Undergraduate Researcher @ SNU MetaStructure Lab"
+    date: "2024-09-01"
+    description: "Worked as an undergraduate intern at SNU MetaStructure Lab (Sep. 2024 ~ Jan. 2025), advised by Prof. J. H. Oh. Researched waves, metamaterial, acoustic finite element method, and AI-driven topology optimization."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
 
-  
+  - title: "Undergraduate Researcher @ SNU Transformative Architecture Lab"
+    date: "2023-10-01"
+    description: "Worked as an undergraduate intern at SNU Transformative Architecture Lab (Oct. 2023 ~ Jan. 2024), advised by Prof. J.K. Yang. Performed FEA using Abaqus for deployable bistable dodecahedral large origami structures."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
+
+  - title: "ROKAF Entrepreneurship Contest — Advanced to MND Finals"
+    date: "2022-10-01"
+    description: "Advanced to the Ministry of National Defense (MND) finals at the Republic of Korea Air Force Entrepreneurship Contest during military service."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
+
+  - title: "Korean History Proficiency Test — 1st Grade (100/100)"
+    date: "2022-06-01"
+    description: "Achieved a perfect score (100/100) and 1st grade on the Korean History Proficiency Test (한국사능력검정시험) while serving in the Republic of Korea Air Force."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
+
+  - title: "Compulsory Military Service — Republic of Korea Air Force"
+    date: "2021-07-01"
+    description: "Served in the Republic of Korea Air Force (Jul. 2021 ~ Apr. 2023) at the 15th Special Missions Wing, 15th Weather Squadron. Discharged as Sergeant."
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Emblem_of_the_Republic_of_Korea_Air_Force.svg/800px-Emblem_of_the_Republic_of_Korea_Air_Force.svg.png"
+
+  - title: "President of Student Council — SNU Department of Physics and Astronomy"
+    date: "2020-11-01"
+    description: "Elected and served as President of the Student Council at the SNU Department of Physics and Astronomy (Nov. 2020 ~ Jul. 2021)."
+    thumbnail: "https://i.namu.wiki/i/ObjA17R-F8C_7Sj2IGvdDIU8-nOwLgewDFcNGoZkeViWne-WYBKK9IjBRkWk2-K9uMwo9qtGDcoKnNz6JV8PqA.webp"
+
+  - title: "Emoticon & Items Brand 'jjooda' — Founded"
+    date: "2020-04-01"
+    description: "Founded and operated an original emoticon and merchandise brand 'jjooda' (Apr. 2020 ~ Jan. 2021). Designed character IP and produced emoticon packages."
+    thumbnail: ""
+
+  - title: "CFD Engineer @ Rocket Pre-startup 'Kspace'"
+    date: "2019-12-01"
+    description: "Worked as a CFD Engineer specializing in rocket injector design at the pre-startup 'Kspace' (Dec. 2019 ~ Feb. 2020)."
+    thumbnail: ""
+
+  # [양식]
+  # - title:
+  #   date:            # ISO 8601 Format: YYYY-MM-DD
+  #   description:
+  #   thumbnail:       # URL or /assets/images/ path

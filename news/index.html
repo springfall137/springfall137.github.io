@@ -1,0 +1,106 @@
+---
+layout: default
+title: News
+description: News and updates from Dahyun Joo
+---
+
+{% assign news = site.data.news.list %}
+
+<style>
+    .news-entry {
+        display: flex;
+        gap: 1.2rem;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid #e5e7eb;
+        align-items: flex-start;
+    }
+
+    .news-entry:last-child {
+        border-bottom: none;
+    }
+
+    .news-thumb {
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        object-fit: cover;
+        background-color: #f3f4f6;
+        border: 1px solid #e5e7eb;
+    }
+
+    .news-thumb-placeholder {
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        background-color: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news-content {
+        flex: 1;
+    }
+
+    .news-date {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #9ca3af;
+        margin-bottom: 0.2rem;
+    }
+
+    .news-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+        line-height: 1.4;
+    }
+
+    .news-desc {
+        font-size: 0.88rem;
+        font-weight: 300;
+        color: #4b5563;
+        line-height: 1.55;
+        margin-bottom: 0;
+    }
+</style>
+
+<div class="container py-4">
+    <div class="row pb-3">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">News</h2>
+        <p style="font-size: 0.9rem; font-weight: 300; color: #6b7280; margin-top: 0.4rem;">
+            Recent updates on research, awards, and activities.
+        </p>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-12">
+            {% for item in news %}
+            <div class="news-entry">
+
+                {% if item.thumbnail and item.thumbnail != "" %}
+                <img src="{{ item.thumbnail }}" alt="{{ item.title }}" class="news-thumb"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="news-thumb-placeholder" style="display:none;">
+                    <i class="fa-regular fa-newspaper" style="font-size: 1.4rem; color: #d1d5db;"></i>
+                </div>
+                {% else %}
+                <div class="news-thumb-placeholder">
+                    <i class="fa-regular fa-newspaper" style="font-size: 1.4rem; color: #d1d5db;"></i>
+                </div>
+                {% endif %}
+
+                <div class="news-content">
+                    <p class="news-date">{{ item.date | date: "%b %Y" }}</p>
+                    <p class="news-title">{{ item.title }}</p>
+                    <p class="news-desc">{{ item.description }}</p>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
