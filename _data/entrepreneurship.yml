@@ -7,7 +7,7 @@ ventures:
     description: >
       Managed online sales of agricultural produce through a self-operated retail channel.
       Handled product sourcing, customer communication, and order fulfillment.
-    # image: "/assets/images/entrepreneurship/dogodo.jpg"  # 이미지 경로 (주석 해제 후 사용)
+    image: "/assets/images/entrepreneurship/dogodo.jpg"
     # link: "https://YOUR_LINK_HERE"                        # 링크 (주석 해제 후 사용)
     links: []
     #  - icon: "fa-solid fa-link"
@@ -20,11 +20,11 @@ ventures:
     category: "Content Creation"
     description: >
       Creates and publishes video content on YouTube covering various topics.
-    # image: "/assets/images/entrepreneurship/jjuvoyager.jpg"
+    image: "/assets/images/entrepreneurship/jjuvoyager.jpg"
     links:
       - icon: "fa-brands fa-youtube"
         label: "YouTube"
-        url: "https://youtube.com/@jjuvoyager"
+        url: "https://www.youtube.com/@jjuvoyager"
 
   - title: "YouTube Channel \"@biztorang\""
     period: "Jun. 2023 ~ Aug. 2023"
@@ -32,11 +32,11 @@ ventures:
     category: "Content Creation"
     description: >
       Produced and managed a YouTube channel focused on business-related content.
-    # image: "/assets/images/entrepreneurship/biztorang.jpg"
+    image: "/assets/images/entrepreneurship/biztorang.jpg"
     links:
       - icon: "fa-brands fa-youtube"
         label: "YouTube"
-        url: "https://youtube.com/@biztorang"
+        url: "https://www.youtube.com/@biztorang"
 
   - title: "Emoticon & Items Brand \"jjooda\""
     period: "Apr. 2020 ~ Jan. 2021"
@@ -45,7 +45,7 @@ ventures:
     description: >
       Founded and operated an original emoticon and merchandise brand.
       Designed character IP, produced emoticon packages, and sold branded items.
-    # image: "/assets/images/entrepreneurship/jjooda.jpg"
+    image: "/assets/images/entrepreneurship/jjooda.jpg"
     links: []
     #  - icon: "fa-solid fa-store"
     #    label: "Store"
