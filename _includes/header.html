@@ -32,11 +32,11 @@
           </li>
           <li class="nav-item dropdown">
             <a href="#"
-              class="nav-link dropdown-toggle {% if page.url contains 'music' or page.url contains 'artwork' %} active {% endif %}"
+              class="nav-link dropdown-toggle {% if page.url contains 'music' or page.url contains 'album' %} active {% endif %}"
               data-bs-toggle="dropdown">fun</a>
             <div class="dropdown-menu">
               <a href="/music" class="dropdown-item">music</a>
-              <a href="/artwork" class="dropdown-item">artwork</a>
+              <a href="{{ '/album' | relative_url }}" class="dropdown-item">Album</a>
             </div>
           </li>
           <li class="nav-item">

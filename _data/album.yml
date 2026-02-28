@@ -1,0 +1,22 @@
+list:
+  - image: "https://images.unsplash.com/photo-1506744626753-1fa44f1e0eee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    caption: "Wandering around the mountains. 🏔️"
+    date: "2025-05-15"
+  
+  - image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    caption: "Late night coding session. 💻☕"
+    date: "2025-03-22"
+
+  - image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    caption: "Music is the best escape. 🎧"
+    date: "2024-11-10"
+
+  - image: "https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    caption: "Beautiful sunset by the river. 🌅"
+    date: "2024-09-05"
+
+# [Template]
+# - image: "/assets/images/album/myphoto.jpg"  # (or URL)
+#   video: "https://www.youtube.com/embed/..."  # (Optional Youtube embed)
+#   caption: "Your caption here"
+#   date: "YYYY-MM-DD"
