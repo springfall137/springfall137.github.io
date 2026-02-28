@@ -548,8 +548,13 @@ description: Department of Mechanical Engineering, Seoul National University
     <div class="row mt-2">
         {% for project in projects limit: 4 %}
         <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
-            <img src="{{ '/assets/images/main-project/' | append: project.image | relative_url }}" alt=""
-                style="height: auto; width: 100%;">
+            {% assign img_url = '/assets/images/project/' | append: project.image | relative_url %}
+            {% if project.image contains '.mp4' %}
+            <video src="{{ img_url }}" autoplay loop muted playsinline
+                style="height: auto; width: 100%; border-radius: 8px; object-fit: cover;"></video>
+            {% else %}
+            <img src="{{ img_url }}" alt="" style="height: auto; width: 100%; border-radius: 8px; object-fit: cover;">
+            {% endif %}
             <p class="pt-2 mt-md-2"
                 style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{
                 project.title }}</p>
