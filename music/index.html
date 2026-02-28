@@ -1,26 +1,172 @@
 ---
 layout: default
-title: Music
-description: Some musics of Dahyun Joo
+title: Mood
+description: Current vibe of Dahyun Joo
 ---
 
-{% assign musics = site.data.music.musics %}
+<style>
+    /* Override default container max-width for full immersive feel if desired, though we'll keep it contained for consistency */
+    .vibe-wrapper {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #111827 0%, #000000 100%);
+        border-radius: 16px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        color: white;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        padding: 3rem 1rem;
+    }
 
-<div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Music</p>
-    {% for music in musics %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-4 mb-3 mb-md-0">
-            <p style="font-size: 1rem;">{{ music.artist }} - {{ music.title }}</p>
+    .vibe-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+        z-index: 2;
+    }
+
+    .vibe-title {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(90deg, #f59e0b, #eb4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .vibe-subtitle {
+        font-family: monospace;
+        font-size: 1rem;
+        color: #9ca3af;
+        letter-spacing: 0.1em;
+    }
+
+    .player-box {
+        width: 100%;
+        max-width: 720px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1rem;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 2;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .player-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #000;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .track-info {
+        text-align: center;
+        margin-top: 1.5rem;
+        z-index: 2;
+    }
+
+    .track-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #f3f4f6;
+    }
+
+    .track-artist {
+        font-size: 0.95rem;
+        color: #9ca3af;
+        font-style: italic;
+    }
+
+    .vibe-badge {
+        display: inline-block;
+        padding: 0.4em 1em;
+        background: rgba(255, 255, 255, 0.1);
+        color: #d1d5db;
+        border-radius: 99px;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Decorative glowing orb effects in the background */
+    .glow-orb-1 {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(235, 72, 153, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .glow-orb-2 {
+        position: absolute;
+        bottom: -15%;
+        right: -10%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+</style>
+
+<div class="container">
+    <div class="vibe-wrapper">
+        <!-- Ambient glow for mood -->
+        <div class="glow-orb-1"></div>
+        <div class="glow-orb-2"></div>
+
+        <div class="vibe-header">
+            <h1 class="vibe-title">Current Mood</h1>
+            <p class="vibe-subtitle">// West Coast Chill // 90s Classic //</p>
         </div>
-        <div class="col-12 col-md-8 mb-3 mb-md-0 align-self-center">
-            <div class="h_iframe">
-                <p align="center"><iframe loading="auto" src="{{ music.link }}" height="400" style="border:none; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+
+        <!-- Video Player Box -->
+        <div class="player-box">
+            <div class="video-container">
+                <!-- Embedded YouTube Video: Ice Cube - You Know How We Do It -->
+                <iframe src="https://www.youtube.com/embed/0lP_4hHJFJA?autoplay=0&rel=0" title="Current Mood Audio"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <iframe loading="auto" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="{{ music.applemusic }}"></iframe>
-            <p class="section-body pub-detail pt-2"><i class="fa-solid fa-music"></i>&nbsp;&nbsp; {{ music.type }}</p>
+        </div>
+
+        <div class="track-info">
+            <div class="track-name">You Know How We Do It</div>
+            <div class="track-artist">Ice Cube (1994)</div>
+            <div class="vibe-badge">Hip-Hop / G-Funk</div>
         </div>
     </div>
-    {% endfor %}
 </div>
-
