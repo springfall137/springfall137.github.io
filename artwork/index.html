@@ -1,79 +1,206 @@
 ---
 layout: default
 title: Artwork
-description: Artworks of Dahyun Joo
+description: Research Statement of Dahyun Joo
 ---
 
-{% assign projects = site.data.project.project %}
-
 <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Artworks & Visualizations</p>
-    <div class="row mt-5">
-        <div class="col-12 col-md-3 mb-3 mb-md-0">
-            <p style="font-size: 1rem;">Venn diagram</p>
+
+    <div class="row pb-3">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Research Statement</h2>
+        <p style="font-size: 0.9rem; font-weight: 300; color: #6b7280; margin-top: 0.4rem;">
+            Statement of Purpose — AI-Assisted Simulation and Design for Space Hardware
+        </p>
+    </div>
+
+    <!-- Venn Diagram: Three Research Directions -->
+    <div class="row mt-4 mb-5">
+        <div class="col-12 col-md-3 mb-3 mb-md-0 align-self-center">
+            <p style="font-size: 1rem; font-weight: 400;">Research Directions</p>
+            <p style="font-size: 0.85rem; font-weight: 300; color: #6b7280;">Hover over the diagram</p>
         </div>
         <div class="col-12 col-md-9 mb-3 mb-md-0">
-            <div class="row">
-                <div class="col-12 col-lg-4 px-3 align-self-center">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
                     <div class="venn" id="venn"></div>
-                    <p class="venn-caption">??Hover over the diagram</p>
                 </div>
-                <div class="col-12 col-lg-8 align-self-center mt-3 mt-md-0">
-                    <p class="section-body">My research focuses on 
-                        <span class="intext-highlight" id="cv">Computer Vision</span> 
-                        and developing with 
-                        <span class="intext-highlight" id="nlp">NLP</span> 
-                        which contains real-world problems using 
-                        <span class="intext-highlight" id="data_analytics">Data Analytics</span>.</p>
+                <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+                    <p class="section-body">
+                        My research sits at the intersection of
+                        <span class="intext-highlight" id="cv">Physics-Consistent AI</span>,
+                        <span class="intext-highlight" id="nlp">Uncertainty-Aware Optimization</span>,
+                        and
+                        <span class="intext-highlight" id="data_analytics">Deployable Structures</span>
+                        —developing computational tools that accelerate engineering iteration while preserving the
+                        reliability required for space hardware.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!--
+
+    <!-- Section 1 -->
     <div class="row mt-5">
-        <div class="col-12 col-md-3 mb-3 mb-md-0">
-            <p style="font-size: 1rem;">WA license</p>
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Motivation</p>
         </div>
-        <div class="col-12 col-md-9 mb-3 mb-md-0">
-            <div class="row">
-                <div class="col-12 col-lg-4 align-self-center">
-                    <div class="head-card w-75 w-md-100 mx-auto">
-                        <div class="card-active">
-                            <div class="floating">
-                                <div class="thickness"></div>
-                                <div class="thickness"></div>
-                                <img src="{{ '/assets/images/main/license.svg' | relative_url }}">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="venn-caption">??Hover over the card</p>
-                </div>
-                <div class="col-12 col-lg-8 align-self-center mt-3 mt-md-0">
-                    <p class="section-body">Interactive WA driver license</p>
-                </div>
-            </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                The next era of space systems will be shaped less by a single breakthrough than by the ability to design
+                reliable hardware under extreme conditions—thermal cycling, vibration, shock, radiation, and limited
+                chances for repair. At the same time, artificial intelligence is changing how engineers model, optimize,
+                and validate complex physical systems. My research objective is to develop AI-assisted simulation and
+                design methods that speed up engineering iteration while keeping the reliability required for space
+                hardware.
+            </p>
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                The core problem I want to address is the gap between speed and trust in engineering computation.
+                High-fidelity simulation—such as computational fluid dynamics (CFD) and finite element analysis
+                (FEA)—can be physically accurate, but it becomes slow and expensive when design spaces are large and
+                uncertainty must be considered. Purely data-driven models can be fast, but they may fail when conditions
+                change or when they are asked to predict outside what they have seen before. In space engineering, this
+                is not a minor weakness. The research challenge, therefore, is not simply to "use AI in engineering,"
+                but to build AI methods that respect physical laws, represent uncertainty honestly, and can be checked
+                and trusted.
+            </p>
         </div>
     </div>
-    -->
+
+    <hr style="margin: 2.5rem 0; border-color: #e5e7eb;">
+
+    <!-- Section 2 -->
+    <div class="row mt-4">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Direction I<br>
+                <span style="font-size: 0.82rem; font-weight: 300; color: #6b7280;">Physics-Consistent<br>Surrogate
+                    Models</span>
+            </p>
+        </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                I plan to develop physics-consistent learning models that serve as reliable surrogates for parts of the
+                simulation pipeline. Rather than replacing physics-based solvers, the goal is to reduce repeated
+                computation in design loops while preserving physical meaning by enforcing governing equations and
+                boundary conditions. I will focus on stability and scalability for stiff systems and complex geometries,
+                using approaches such as domain decomposition, adaptive training, and model designs that behave more
+                like numerical tools than black boxes.
+            </p>
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                Building on my physics foundation and my ongoing quantum machine-learning-assisted topology optimization
+                work with Tohoku University, I also want to integrate quantum machine learning and quantum algorithms
+                into hybrid design workflows—using them to expand exploration and to tackle combinatorial tasks—while
+                keeping final decisions anchored in trusted physics simulation.
+            </p>
+        </div>
+    </div>
+
+    <hr style="margin: 2.5rem 0; border-color: #e5e7eb;">
+
+    <!-- Section 3 -->
+    <div class="row mt-4">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Direction II<br>
+                <span style="font-size: 0.82rem; font-weight: 300; color: #6b7280;">Robustness
+                    &amp;<br>Uncertainty-Aware Design</span>
+            </p>
+        </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                Space systems must work despite manufacturing variation, material uncertainty, and changing
+                environments. This means the best design is often not the one that is optimal on paper, but the one that
+                remains safe and effective under realistic perturbations. I plan to integrate uncertainty quantification
+                and reliability metrics into design optimization, so the workflow produces designs with margins that
+                engineers can justify. This direction combines efficient surrogate modeling, reliability-aware
+                optimization, and verification strategies that determine when high-fidelity simulation must be brought
+                back in. The goal is responsible decision-making, not just fast decision-making.
+            </p>
+        </div>
+    </div>
+
+    <hr style="margin: 2.5rem 0; border-color: #e5e7eb;">
+
+    <!-- Section 4 -->
+    <div class="row mt-4">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Direction III<br>
+                <span style="font-size: 0.82rem; font-weight: 300; color: #6b7280;">Deployable &amp;<br>Impact-Tolerant
+                    Structures</span>
+            </p>
+        </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                I want to apply these methods to structural concepts relevant to space hardware: lightweight,
+                deployable, and impact-tolerant structures, including deployable structures for small satellites. My
+                exposure to architected structures and metamaterial-inspired design has shown me that geometry can
+                unlock performance regimes that traditional materials alone cannot. I am actively developing reusable
+                kirigami-based impact absorber concepts, where geometric mechanisms and stability transitions absorb
+                energy without relying on one-time damage. By combining these structural ideas with AI-assisted
+                simulation and reliability-aware optimization, I aim to enable designs that are computationally
+                discoverable, manufacturable, and validated through multi-physics analysis rather than intuition alone.
+            </p>
+        </div>
+    </div>
+
+    <hr style="margin: 2.5rem 0; border-color: #e5e7eb;">
+
+    <!-- Section 5 -->
+    <div class="row mt-4">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Background</p>
+        </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                In a rocket startup environment, I ran injector CFD simulations and learned firsthand how sensitive
+                performance predictions can be to modeling choices—and why reliability requires disciplined
+                verification. In parallel, my PINN-based turbulence research focused on improving learning efficiency
+                without losing physical structure, and I confirmed that incorporating multi-scale basis functions could
+                make the model more stable and accurate on unsteady-flow cases. Across both settings, I repeatedly faced
+                the same tension: moving fast enough to iterate, while keeping results trustworthy enough to act on.
+                Together, these experiences sharpened the problem I now want to solve: closing the gap between speed and
+                trust in engineering computation.
+            </p>
+        </div>
+    </div>
+
+    <hr style="margin: 2.5rem 0; border-color: #e5e7eb;">
+
+    <!-- Section 6 -->
+    <div class="row mt-4 mb-5">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <p style="font-size: 1rem; font-weight: 500;">Long-term Vision</p>
+        </div>
+        <div class="col-12 col-md-9">
+            <p style="font-size: 0.93rem; font-weight: 300; line-height: 1.8; color: #374151;">
+                Ultimately, my objective is to help build computational foundations for the next era of space
+                systems—where AI accelerates engineering without weakening rigor, and where reliability remains the
+                organizing principle even as iteration becomes faster. Methods become truly valuable when adopted at
+                scale—across laboratories, industry partners, and engineering programs that depend on reliable
+                simulation and fast iteration. I intend to bring these proven workflows into Korea's space and advanced
+                manufacturing landscape, where reliability and scale are everyday requirements, and continue improving
+                them through long-term collaboration with international partners so that teams on both sides can share
+                benchmarks, cross-check assumptions, and refine tools together.
+            </p>
+        </div>
+    </div>
+
 </div>
 
 <style>
     .intext-highlight {
         text-decoration: none;
         background-position-y: -0%;
-        background-image: linear-gradient( white 50%, #ffe13a 50%);
+        background-image: linear-gradient(white 50%, #ffe13a 50%);
         background-size: auto 175%;
         font-weight: 400;
         color: #000;
     }
 
-
-.venn-caption {
-	font-size: 12px !important;
-	text-align: center;
-	font-weight: 300;
-	color: #666;
-}
+    .venn-caption {
+        font-size: 12px !important;
+        text-align: center;
+        font-weight: 300;
+        color: #666;
+    }
 </style>
 
 <link rel="stylesheet" href="{{ '/assets/css/venn-diagram.css' | relative_url }}">
@@ -81,4 +208,3 @@ description: Artworks of Dahyun Joo
 <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/venn.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/venn-diagram.js' | relative_url }}"></script>
-

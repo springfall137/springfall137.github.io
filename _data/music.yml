@@ -1,8 +1,8 @@
 musics:
-  - title: "Celebrity"
-    artist: "IU"
-    link: "https://www.youtube.com/embed/-"
-    applemusic: "https://embed.music.apple.com/us/album/-"
-    type: IU
+  - title: "You Know How We Do It"
+    artist: "Ice Cube"
+    link: "https://www.youtube.com/embed/0lP_4hHJFJA"
+    applemusic: "https://embed.music.apple.com/us/album/you-know-how-we-do-it/1440765738?i=1440766099"
+    type: "Hip-Hop / Rap"
     genre:
-      - POP
+      - Hip-Hop
