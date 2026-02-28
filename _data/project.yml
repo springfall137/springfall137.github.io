@@ -1,150 +1,52 @@
 project:
-  - title: Camera Invariant Domain Adaptation (Samsung AI)
-    image: samsung_ai.png
-    code : 
-    link : https://dacon.io/competitions/official/236132/overview/description
-    paper : https://drive.google.com/file/d/19zF3f-9vLC4RSb9fXOn7W2s2cPoyKFHC/view?usp=sharing
-    # paper: 
-    # slide: samsung_ai.pdf
+  - title: "Samsung Display: Bistable Kirigami Integration for Curved Display Corner"
+    image: samsung_display.jpg
     detail: >
-      <p>Autonomous driving involves utilizing various sensors to perceive the surrounding environment and control the vehicle. Camera sensors, depending on their placement, type, and driving conditions, can exhibit disparities between images known as Domain Gap. Previous research has extensively applied Unsupervised Domain Adaptation techniques to overcome performance degradation due to photometry and texture gaps in images. However, most existing studies neglect the optical characteristics of cameras, especially geometric distortion in images. <br> Therefore, in this competition, we propose the development of an AI algorithm capable of achieving high-performance image segmentation (Semantic Segmentation) for distorted images (Target Domain). This will be accomplished by leveraging undistorted images (Source Domain) and their corresponding labels. </p>
-      <p>We selected 'SePiCo: Semantic-Guided Pixel Contrast for Domain Adaptive Semantic Segmentation' as a method of Domain Adaptation</p>
-      <p style='text-align: center;'><b>Team: Hyunjae Kim</b></p>
+      <p>Integrated a bistable kirigami pattern into curved-display corner regions to enable controlled shape transition and robustness under constrained geometry.</p>
+      <p>Iterated pattern parameterization and stability-focused analysis to satisfy corner curvature and boundary constraints; prioritized manufacturability and repeatable behavior.</p>
     tags:
-      - Semantic Segmentation
-      - Domain Adaptation
+      - Kirigami
+      - Display
+      - Mechanics
+    description: >-
+      Integrated a bistable kirigami pattern into curved-display corner regions.
+    id: samsung_display
+
+  - title: "LG Electronics: Kirigami-Enhanced Pulp-Mold Packaging for Impact Absorption"
+    image: lg_electronics.jpg
+    detail: >
+      <p>Applied kirigami patterns to pulp-mold packaging to increase deformation stroke and improve energy absorption without adding bulk material.</p>
+      <p>Developed practical pattern guidelines considering pulp-mold forming constraints; summarized expected mechanical behavior and prototyping directions.</p>
+    tags:
+      - Kirigami
+      - Packaging
+      - Impact Absorption
+    description: >-
+      Applied kirigami patterns to pulp-mold packaging to increase deformation stroke.
+    id: lg_electronics
+
+  - title: "AI Factory Hackathon"
+    image: ai_factory.jpg
+    detail: >
+      <p>Participated in the AI Factory Hackathon to develop innovative AI models designed to solve practical and real-world problems.</p>
+      <p>Focused on efficient data preprocessing, model tuning, and algorithm configuration to provide optimal solutions under the given competition scenarios.</p>
+    tags:
+      - AI
+      - Hackathon
       - Data Analysis
     description: >-
-      Domain Adaptation with SePiCo
-    id: samsung_ai
-  - title: LG Aimers - Data Intellgence (LG AI Research)
-    image: lg_aimers.jpg
-    # code : 
-    link : https://dacon.io/en/competitions/official/236080/overview/description
-    award : https://drive.google.com/file/d/1PA8f44wlax5uR_29AvfnqPGz51SPycP6/view 
-    slide: https://drive.google.com/file/d/1TZq0Mu4kye22qpHClt7d8SWKIiZI1uBP/view?usp=sharing
+      AI model development and implementation at AI Factory Hackathon.
+    id: ai_factory
+
+  - title: "Semiconductor Solverton Competition Top Prize"
+    image: solverton.jpg
     detail: >
-      <p>스마트 공장의 제어 시스템 구축을 위한 제품 품질 분류 AI 모델 개발</p>
-      <p style='text-align: center;'><b>Team: Yunah Choi</b></p>
+      <p>Optimized AC performance of GAA NS FET by analyzing and optimizing resistance, capacitance, and frequency gain compared to FinFET through structural modeling and process-driven device design.</p>
+      <p>Proposed a new design with enhanced performance via TCAD simulation. Recognized with the Deputy Prime Minister and Education Minister Prize.</p>
     tags:
-      - Machine Learning
-      - Data Analysis
+      - Semiconductor
+      - TCAD
+      - Simulation
     description: >-
-      Domain Adaptation with SePiCo
-    id: lg_aimers
-  - title: Game Review NLP Dashboard
-    image: game-review-analysis.jpg
-    code : https://github.com/itsnowkim/insight_proj
-    link : https://itsnowkim-nlp-dashboard-main-fpsbhh.streamlit.app/Analytics
-    paper: https://drive.google.com/file/d/1-iEuXCP5vmTFGluzUuzB7bs4ijwEFJ0L/view?usp=sharing
-    detail: >
-      <p>Implemented a Game Review NLP Dashboard applying NLP methods such as BiLSTM and Fine-tuned KoBERT. The project received the Grand Prize at the 2023 Spring INSIGHT Projects Competition.</p>
-
-      <p>Developed the main page configuration using Python, Pandas, NumPy, PyTorch, TensorFlow, Docker, FastAPI, KoNLPy, and Plotly.</p>
-
-      <p style='text-align: center;'><b>Team: Hyunjae Kim, Chanjoong Lee, Beomyun Kwon, Chanho Park, Minhye Lee</b></p>
-    tags:
-      - NLP
-      - Game Review
-      - Dashboard
-      - Data Analysis
-      - Python
-    description: >-
-      Developed a Game Review NLP Dashboard with advanced features using various NLP techniques.
-    id: game_review_dashboard
-
-  - title: Risk Rating Model for Small Business Owners (Gangseo-gu)
-    image: gangseo.png
-    award : https://drive.google.com/file/d/1WdX06ZbtWvYvjXwCwl0PzQvnKN4UUJ5_/view?usp=drive_link
-    paper: https://drive.google.com/file/d/1CUrcEPBGtgYC5gKSNbJzW3pi1RPuxRw5/view?usp=drive_link
-    link: https://public.tableau.com/app/profile/heejin.park2241/viz/_16793225446900/sheet0
-    detail: >
-      <p>Developed a Risk Rating model for small business owners in Gangseo-gu using the credit rating model. Received the Mayor of Gangseo-gu Office Award.</p>
-
-      <p>Conducted data analysis and processing, and designed a slide using Python, Pandas, NumPy, and Tableau.</p>
-
-      <p style='text-align: center;'><b>Team: Heejin Park, Mijung Bang</b></p>
-    tags:
-      - Risk Rating
-      - Data Analysis
-      - Business
-      - Dashboard
-    description: >-
-      Implemented a Risk Rating Model for small business owners, focusing on data from the Seoul Credit Guarantee Foundation.
-    id: risk_rating_model
-
-  - title: Carbon Footprint Calculator & Eco-friendly Travel Route Recommendation (Shinhan Card & NIA)
-    image: flight.gif
-    award : https://drive.google.com/file/d/1qwXlX3hWxUBZ6qaR1nGZNPtNbhaZPoGl/view?usp=drive_link
-    link: https://springfall137.github.io/DAVENGERS/
-    paper: https://drive.google.com/file/d/1peN1vnXzLK5E7Qi40avpIJMANBaVW3FB/view?usp=drive_link
-    detail: >
-      <p>Developed a Carbon Footprint calculator and Eco-friendly travel route recommendation system in Jeju Island. Awarded the Innovation League Grand Prize (Runner-Up) at BIG CONTEST '22.</p>
-
-      <p>Utilized Streamlit for deployment, applied NLP methods, and designed user-specific ML algorithms.</p>
-
-      <p style='text-align: center;'><b>Team: Jeonghyun Ha, Kyunghoon Na, Kyungjoo Ko, Hannah Jung</b></p>
-    tags:
-      - Recommender System
-      - Dashboard
-      - Business
-      - NLP
-    description: >-
-      Developed a comprehensive system for calculating carbon footprint and recommending eco-friendly travel routes in Jeju Island.
-    id: carbon_footprint_calculator
-
-  - title: Shell Project
-    image: shell-project.jpg
-    code: https://github.com/springfall137/System-Programming-
-    detail: >
-      <p>Designed a custom shell that translates user's commands to the Kernel using C language. Built Linux shell with basic commands like 'cd', 'mkdir', 'rmdir', etc.</p>
-
-      <p>Created child processes with the 'fork()' function and implemented a parent process to create new child processes for each instruction.</p>
-    tags:
-      - System 
-    description: >-
-      Developed a custom shell for Linux with various basic commands and processes.
-    id: shell_project
-
-  - title: Stock Server Project
-    image: stock-server.jpg
-    code: https://github.com/springfall137/System-Programming-
-    detail: >
-      <p>Constructed a concurrent stock server that can be connected by multiple clients for buying or selling stocks concurrently.</p>
-
-      <p>Implemented two approaches: Event-based and Thread-based. Displayed the status of the current stock written from the stock.txt file.</p>
-    tags:
-      - System
-    description: >-
-      Created a concurrent stock server with event-based and thread-based approaches.
-    id: stock_server
-
-  - title: Solar Power System considering the impact of Wave Height
-    image: wave_height_solar.png
-    award : https://drive.google.com/file/d/1KcwO7CA0IMRVS5UIBMqYeIV4SnqOdEf2/view?usp=drive_link
-    paper: https://drive.google.com/file/d/15hCObcAkUot7UVm0jZ3oW2a--OWQ7fRO/view?usp=drive_link
-    slide : https://drive.google.com/file/d/11W-5Y1yJsE7i9_sQYGqdBi1q1JS7xzbp/view?usp=drive_link
-    detail: >
-      <p>
-        Existing water photovoltaic power generation uses the sun's semi-permanent energy and water, an idle resource. And this can only be applied on the water without waves. Therefore, we built a water-tracking solar power generation system.
-      </p>
-    tags:
-      - Develop 
-    description: >-
-      Solar Power System considering the impact of Wave Height.
-    id: wave_height_solar
-
-  - title: Laser Cutting Machine Using Mechanum Wheel
-    image: mechanum_wheel.png
-    paper : https://drive.google.com/file/d/1nkvnECxujgUwZ4slDoWmPd16uf3osqao/view?usp=drive_link
-    award : https://drive.google.com/file/d/1pqiNYdRTKNxU8gQ9kz1P284Ut-OkNXbG/view?usp=drive_link
-    slide : https://drive.google.com/file/d/1pEoxVY25cqlQfiGGUrwPFc1o592eoVRh/view?usp=drive_link
-    detail: >
-      <p>
-        Laser cutting machines can easily process materials, but they are heavy and have the disadvantage that the size of the material is limited depending on the size of the laser cutting machine. Our team wants to compensate for the shortcomings of the laser cutting machine by using the Mechanum wheel. The driving equation and efficiency according to the direction of movement of the mechanical wheel are explored. It also develops a device that cuts the material by moving it according to the drawing.
-      </p>
-    tags:
-      - Develop
-    description: >-
-      Laser Cutting Machine Using Mechanum Wheel
-    id: mechanum_wheel
+      Optimized AC performance of GAA NS FET in the Semiconductor Solverton.
+    id: solverton

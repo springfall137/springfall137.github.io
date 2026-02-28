@@ -1,29 +1,20 @@
 project:
-  - title: "Camera Invariant Domain Adaptation"
-    description: "Talent Pool Invitation (Samsung Electronics), Top 30"
-    image: "samsung_ai.png"
+  - title: "Samsung Display: Bistable Kirigami Integration"
+    description: "Curved Display Corner Integration"
+    image: "samsung_display.jpg"
     collaborators:
-      - Hyunjae Kim
-  
-  - title: "Risk Rating Model for Small Business Owners (Winner)"
-    description: "Gangseo-gu Office 2023 Winner (Mayor's Award)"
-    image: "GANGSEO.png"
-    collaborators:
-      - Heejin Park
-      - Mijung Bang
-      - Moonil Yang
       
-  - title: "Jeju Island Travel Route Recommender System for Eco-Friendly & Gen-MZ (Winner)"
-    description: "BIG CONTEST 2022 Winner (by NIA, Shinhan Card)"
-    image: "big_contest.gif"
+  - title: "LG Electronics: Kirigami-Enhanced Packaging"
+    description: "Pulp-Mold Packaging for Impact Absorption"
+    image: "lg_electronics.jpg"
     collaborators:
-      - Jeonghyun Ha
-      - Kyunghoon Na
-      - Kyungjoo Ko
-      - Hannah Jeong
-  
-  - title: "LG Aimers 2 : Data Intelligence"
-    description: "Top 30"
-    image: "lg_aimers.jpg"
+      
+  - title: "AI Factory Hackathon"
+    description: "AI Model Development"
+    image: "ai_factory.jpg"
     collaborators:
-      - Yunah Choi
+
+  - title: "Semiconductor Solverton Competition"
+    description: "Top Prize (Deputy Prime Minister Award)"
+    image: "solverton.jpg"
+    collaborators:
