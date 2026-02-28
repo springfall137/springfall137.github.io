@@ -5,25 +5,14 @@ title: CV
 description: Curriculum vitae of Dahyun Joo
 ---
 
-{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
-
 <div class="toc-container">
   <nav class="toc">
     <strong>Table of Contents</strong>
     <ul>
-
       <li><a href="#education">Education</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#research">Research Experience</a></li>
-      <li><a href="#work">Work Experience</a></li>
-      <li><a href="#awards">Awards & Activities</a></li>
-      <li><a href="#scholarships">Scholarships</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <!-- <li><a href="#activities">Activities</a></li> -->
-      <li><a href="#medias">Medias</a></li>
-      <li><a href="#speech">Speech</a></li>
-
-      <!-- 추�??�인 ?�션 링크??-->
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
     </ul>
   </nav>
 </div>
@@ -32,695 +21,249 @@ description: Curriculum vitae of Dahyun Joo
   <div class="row">
     <div class="col-12">
       <main>
-        <header>
-          <h1>Dahyun Joo
-            <!--<a class="pdf" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" rel="external"><i class="fas fa-file-pdf"></i> <b>PDF</b></a></h1>
-                  <p><a href="#" class="cryptedmail"
-                    data-name="kyuhwan.shim"
-                    data-domain="uw"
-                    data-tld="edu"
-                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a><br><a href="https://springfall137.github.io">springfall137.github.io</a><br></p> !-->
+        <header style="margin-bottom: 3rem;">
+          <h1 style="font-weight: 800; text-transform: uppercase;">Dahyun Joo</h1>
+          <p style="font-size: 0.95rem; color: #4b5563; line-height: 1.6; margin-top: 1rem;">
+            +82-10-2647-9797 | <a href="mailto:clairda@snu.ac.kr" style="text-decoration:none;">clairda@snu.ac.kr</a> |
+            <a href="https://www.linkedin.com/in/dahyun-joo-0b8755300"
+              style="text-decoration:none;">linkedin.com/in/dahyun-joo-0b8755300</a><br>
+            Republic of Korea | DOB: Aug 28, 2000 | Marital Status: Single<br>
+            <a href="{{ '/cv.pdf' | relative_url }}" target="_blank"
+              style="display:inline-block; margin-top:0.75rem; text-decoration:none; font-weight: 500; color: #2563eb;">
+              <i class="far fa-file-pdf"></i> Download CV (PDF)
+            </a>
+          </p>
         </header>
 
-        <section id="education">
-          <h2>Education</h2>
+        <section id="education" style="margin-bottom: 3rem;">
+          <h2
+            style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+            Education</h2>
+
+          <div class="dated-entry">
+            <div class="dated-date">Mar 2025 - Present</div>
+            <div class="dated-content"><b>Seoul National University</b>, Seoul, Korea<br>
+              M.S. Course, Mechanical Engineering <br>
+              <small>AI-driven Simulation and Design Lab (Prof. Do-Nyun Kim)</small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Mar 2019 - Feb 2025</div>
+            <div class="dated-content"><b>Seoul National University</b>, Seoul, Korea<br>
+              B.S. Physics (Minor: Mechanical Engineering) <br>
+              <small>Thesis: <i>wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation
+                  Functions</i></small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2016 - 2019</div>
+            <div class="dated-content"><b>Chungnam Science High School</b>, Gongju, Korea<br>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2015 - 2016</div>
+            <div class="dated-content"><b>Saerom Middle School</b>, Sejong, Korea<br>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2015</div>
+            <div class="dated-content"><b>American School of Yaoundé</b>, Yaoundé, Cameroon<br>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" style="margin-bottom: 3rem;">
+          <h2
+            style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+            Experience</h2>
+
+          <div class="dated-entry">
+            <div class="dated-date">Mar 2025 - Present</div>
+            <div class="dated-content"><b>M.S. Researcher</b><br>
+              SNU AI-driven Simulation and Design Lab (Prof. D. N. Kim), Seoul, Korea<br>
+              <small>Metamaterials; AI-driven simulation and design.</small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Feb 2025</div>
+            <div class="dated-content"><b>Intern</b><br>
+              STATION F, Paris, France
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Sep 2024 - Jan 2025</div>
+            <div class="dated-content"><b>Undergraduate Intern</b><br>
+              SNU MetaStructure Lab (Prof. J. H. Oh), Seoul, Korea<br>
+              <small>Waves; metamaterials; acoustic finite element method; AI-driven topology optimization.</small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Mar 2024 - Jul 2024</div>
+            <div class="dated-content"><b>Intern</b><br>
+              Thales Korea
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Jan 2024 - Feb 2024</div>
+            <div class="dated-content"><b>Working Scholar</b><br>
+              SNU Gwanak Residence Halls Administrative Office, Seoul, Korea
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Oct 2023 - Jan 2024</div>
+            <div class="dated-content"><b>Undergraduate Intern</b><br>
+              SNU Transformative Architecture Laboratory (Prof. J. K. Yang), Seoul, Korea<br>
+              <small>Simulation for production of deployable bistable dodecahedral large origami structures; performed
+                FEA using Abaqus.</small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Jun 2023 - Aug 2023</div>
+            <div class="dated-content"><b>Content Creator</b><br>
+              YouTube channel <i>@biztorang</i>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Apr 2023 - May 2023</div>
+            <div class="dated-content"><b>Online Retail Sales</b><br>
+              <i>DogodoNongwon</i>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Oct 2022 - Present</div>
+            <div class="dated-content"><b>Content Creator</b><br>
+              YouTube channel <i>@jjuvoyager</i>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Jul 2021 - Apr 2023</div>
+            <div class="dated-content"><b>Sergeant (Completed Service)</b><br>
+              Republic of Korea Air Force, 15th Special Missions Wing, 15th Weather Squadron
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Nov 2020 - Jul 2021</div>
+            <div class="dated-content"><b>President of Student Council</b><br>
+              SNU Department of Physics and Astronomy, Seoul, Korea
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Mar 2020 - Jun 2021</div>
+            <div class="dated-content"><b>Working Scholar</b><br>
+              Center for Theoretical Physics, SNU Department of Physics and Astronomy, Seoul, Korea
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Apr 2020 - Jan 2021</div>
+            <div class="dated-content"><b>Brand Owner</b><br>
+              Emoticon and items brand <i>jjooda</i>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">Dec 2019 - Feb 2020</div>
+            <div class="dated-content"><b>CFD Engineer</b><br>
+              Rocket pre-startup <i>Kspace</i> (Rocket Injector Design)
+            </div>
+          </div>
+        </section>
+
+        <section id="awards" style="margin-bottom: 3rem;">
+          <h2
+            style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+            Awards</h2>
 
           <div class="dated-entry">
             <div class="dated-date">2024</div>
-            <div class="dated-content"><b><a href="https://snu.ac.kr/">Seoul National University</a></b>, Seoul,
-              Korea<br>
-              Master's Student, <a href="https://gsai.snu.ac.kr/">Graduate School of Artificial Intelligence</a>
+            <div class="dated-content"><b>Semiconductor Solverton Competition Top Prize</b><br>
+              Deputy Prime Minister and Education Minister Prize.<br>
+              <small>Optimizing AC performance of GAA NS FET by analyzing and optimizing resistance, capacitance, and
+                frequency gain compared to FinFET through structural modeling and process-driven device design.</small>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2024</div>
+            <div class="dated-content"><b>Seoul National University Semiconductor Specialized College Scholarship</b>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2022</div>
+            <div class="dated-content"><b>Korean History Proficiency Test (Level 1, 100/100)</b>
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2022</div>
+            <div class="dated-content"><b>ROKAF Entrepreneurship Contest</b><br>
+              Advanced to MND finals
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2021</div>
+            <div class="dated-content"><b>Excellent Private Award</b><br>
+              Granted by ROK Air Force Information Communication School Principal (Col.)
+            </div>
+          </div>
+
+          <div class="dated-entry">
+            <div class="dated-date">2020</div>
+            <div class="dated-content"><b>Certificate of Completion: Startup Investment Education</b><br>
+              Issued by SNU Entrepreneurship Center
             </div>
           </div>
 
           <div class="dated-entry">
             <div class="dated-date">2019</div>
-            <div class="dated-content"><b><a href="https://sogang.ac.kr/">Sogang University</a></b>, Seoul, Korea<br>
-              Bachelor's Degree in <a href="https://cs.sogang.ac.kr/">Computer Science and Engineering</a><br>
-              <!-- <small>Deep Interests in <i>Data Science and Deep Learning</i></small><br> -->
-              <small> Military Duty at <a href="https://cb119.chungbuk.go.kr/yd119/main.do">Yeongdong Firehouse ?��
-                </a><br>
-                <a href="https://insight.oopy.io">INSIGHT ?��</a>, Data Science Group of Sogang Business School
-              </small>
-
-              <!-- <div class="dated-entry">
-            <div class="dated-date">Sep 2022 - June 2023</div>
-            <div class="dated-content">
-              <b>INSIGHT</b>, Business School of Sogang University
-              <br>
-              <small>Undergraduate Data Science Study Group</small>
-            </div>
-          </div> -->
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">2016</div>
-            <div class="dated-content"><b><a href="https://cnsh.cnehs.kr/">Chungnam Science High School</a></b>, Kongju,
-              Korea<br>
-              <small>R&E at Informatics Student Group</small>
+            <div class="dated-content"><b>Excellent Student Award</b><br>
+              Granted by Chungcheongnam-do Federation of Teachers' Association
             </div>
           </div>
         </section>
 
-        <section id="publications">
-          <h2>Publications</h2>
-          {% for pubs in publications %}
-          {% assign pub_items_sorted = pubs.items | sort: "month" | reverse %}
-          {% for pub in pub_items_sorted %}
-          <div class="dated-entry">
-            <div class="dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
-            <div class="dated-content"><a style="font-weight: 500"
-                href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
-              {% for author in pub.authors %}
-              {% assign author_data = site.data.people.people | where:"name", author | first %}
-              {% if author == "Dahyun Joo" %}<a style="font-weight: 500 !important"
-                href="https://springfall137.github.io" data-bs-toggle="tooltip"
-                title="{{ author }} is a Ph.D. student at the {{ author_data.affiliation }}">Dahyun Joo</a>{% else
-              %}{% if author_data.website %}<a href="{{ author_data.website }}" class="coauthor">{{ author }}</a>{% else
-              %}<span class="coauthor">{{ author }}</span>{% endif %}{% endif %}{% unless forloop.last%}, {% endunless
-              %}
-              {% endfor %}
-              <br>
-              {{ pub.venue }}.{% if pub.note %} ({{ pub.note}}){% endif %}<br>
-              {% if pub.award %}<i class="fas fa-medal"></i><span style="font-weight: 500">{{ pub.award }}</span><br>{%
-              endif %}
-            </div>
-          </div>
-          {% endfor %}
-          {% endfor %}
-        </section>
-
-        <section id="research">
-          <h2>Research Experience</h2>
+        <section id="skills" style="margin-bottom: 3rem;">
+          <h2
+            style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+            Skills</h2>
 
           <div class="dated-entry">
-            <div class="dated-date">Jul 2024 - Aug 2024</div>
+            <div class="dated-date">Languages</div>
             <div class="dated-content">
-              <b><a href="https://ais.uni-bonn.de">Autonomous Intelligent Systems Group @ Universität Bonn
-                  ?��</a></b><br>
-              Visiting Student Researcher<br>
-              <!-- <small>Advisor: Dain Jeong</a></small> -->
-              <!-- <br> -->
-            </div>
-          </div>
-
-
-          <div class="dated-entry">
-            <div class="dated-date">Dec 2023 - Aug 2024</div>
-            <div class="dated-content">
-              <b><a href="https://bi.snu.ac.kr">Biointelligence Lab @ Graduate School of AI, Seoul Nat'l University
-                </a></b><br>
-              Undergraduate Research Assistant<br>
-              <!-- <small>Advisor: Dain Jeong</a></small> -->
-              <!-- <br> -->
+              <b>Korean</b> (Mother tongue)<br>
+              <b>English</b> (Fluent: TOEFL 104 / TOEIC 850 / New TEPS 404)<br>
+              <b>French</b> (Good: DELF A2)
             </div>
           </div>
 
           <div class="dated-entry">
-            <div class="dated-date">Dec 2023 - Feb 2024</div>
+            <div class="dated-date">Programming</div>
             <div class="dated-content">
-              <b><a href="https://leelabsg.org/">Lee Lab @ Graduate School of Data Science, Seoul Nat'l University
-                </a></b><br>
-              Mentee of ExploreCSR Program<br>
-              <!-- <small>Advisor: Dain Jeong</a></small> -->
-              <!-- <br> -->
-
-            </div>
-          </div>
-        </section>
-
-        <section id="work">
-          <h2>Work Experience</h2>
-
-          <div class="dated-entry">
-            <div class="dated-date"> 2024 </div>
-            <!-- Mar 2024 - Jul 2024</div> -->
-            <div class="dated-content">
-              <b><a href="https://bi.snu.ac.kr/Robocup/2024/index.html">Team TIDYBOY-DSPL</a></b>,
-              Robocup2024 <br>
-              <!-- <small>Advisor: Dain Jeong</a></small> -->
-              <!-- <br> -->
-              <!-- <small><strong>[Computer Vision]</strong> Develop Vision-based pipelines models for Intelligent Traffic System, 
-
-                <br>Application & Experiment SOTA Computer Vision Model: YOLOX, YOLOv8 Pipeline -->
-              <!-- <br><strong>[EdgeAI]</strong> Inference Traffic Data Extractor Model on NVIDIA AGX Orin (at Deepstream -->
-              <!-- 6.1.) -->
-              <!-- <br><strong>[MLOps]</strong> Supplement ML Pipeline (kubeflow, Docker and GCP) -->
-              <!-- <br><strong>[DataOps/MLOps]</strong> Construct Data lake for processing public data in GCP and  ML Pipelining  -->
-              <small>
-                <strong>[Vision Language]</strong> Developed vision-based pipeline models based on YOLOv10 and CLIP for
-                real-time environment understanding <br>
-                <a href="https://drive.google.com/file/d/1I0jE7nnWiEHefcE5POKJSnxS68QTiFjW/view?usp=drive_link"> ?��
-                  Finalist (3rd place)</a> in the <a href="https://athome.robocup.org/">Robocup@Home DSPL League</a>.
-              </small>
+              C, Python, MATLAB, R
             </div>
           </div>
 
           <div class="dated-entry">
-            <div class="dated-date">Mar 2023 - Aug 2023</div>
+            <div class="dated-date">Software</div>
             <div class="dated-content">
-              <b><a href="https://nota.ai">Nota Inc. </a></b><br>
-              Machine Learning Engineer Intern @ ITS Team <br>
-              <!-- <small>Advisor: Dain Jeong</a></small> -->
-              <!-- <br> -->
-              <!-- <small><strong>[Computer Vision]</strong> Develop Vision-based pipelines models for Intelligent Traffic System, 
-
-                <br>Application & Experiment SOTA Computer Vision Model: YOLOX, YOLOv8 Pipeline -->
-              <!-- <br><strong>[EdgeAI]</strong> Inference Traffic Data Extractor Model on NVIDIA AGX Orin (at Deepstream -->
-              <!-- 6.1.) -->
-              <!-- <br><strong>[MLOps]</strong> Supplement ML Pipeline (kubeflow, Docker and GCP) -->
-              <!-- <br><strong>[DataOps/MLOps]</strong> Construct Data lake for processing public data in GCP and  ML Pipelining  -->
-              <small>
-                <strong>[Vision]</strong> Developed and deployed vision-based pipeline models for Intelligent Traffic
-                Systems on Edge Device
-                <br><strong>[DataOps/MLOps]</strong> Constructed data lake and ML pipelines in AWS and GCP
-              </small>
-            </div>
-          </div>
-
-
-          <div class="dated-entry">
-            <div class="dated-date">2020 - 2023</div>
-            <div class="dated-content">
-              <b><a href="https://oconnect.kr">OCONNECT</a></b>, <a href="https://unist.ac.kr/">Ulsan Nat'l Institute of
-                Science & Technology</a><br>
-              Co-Founder & Programmer<br>
-              <!-- <br> -->
-              <small>
-                Assist developing <strong>ONESTEP</strong>, an easy-insert socket
-                <!-- <br>To create user-friendly products that address the difficulties faced by the underprivileged. -->
-
-                <div style="display: flex; justify-content: flex-start;">
-                  <button class="main-button" style="margin-right: 10px;"
-                    onclick="location.href='https://springfall137.github.io/oconnect'">OCONNECT</button><br>
-                  <button class="main-button" style="margin-right: 10px;"
-                    onclick="location.href='https://drive.google.com/file/d/1It1AegkWmy-Plux0zWxijJ-xgVQXLflU/view?usp=sharing'">History</button><br>
-                </div>
-              </small>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">2020F - 2022S</div>
-            <div class="dated-content">
-              <b><a href="https://oconnect.kr">Yeongdong Firehouse </a></b>, <a
-                href="https://cb119.chungbuk.go.kr/yd119/main.do">Yeongdong Firestation</a>
-
-              <br>
-              <small>
-                ?�� Military Duty (Korea Conscripted Firefighters)
-              </small>
-            </div>
-          </div>
-        </section>
-
-
-
-        <section id="awards">
-          <h2>Awards & Activities</h2>
-
-          <div class="dated-entry">
-            <div class="dated-date">Sep 2023</div>
-            <div class="dated-content">
-              <b>Finalist (Top 3) </b>, Robocup2024@Home<br>
-              <small>
-                <strong>Robocup2024@Home Domestic Service Platform League</strong> @ <a
-                  href="https://2024.robocup.org">Eindhoven, Netherlands</a>
-                <br>
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1I0jE7nnWiEHefcE5POKJSnxS68QTiFjW/view?usp=sharing"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      <!-- TODO -->
-                      ?�� Finalist (Top 3)
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1rxC79jBOboVMgE4snclVyWhmbtxybhmP/view?usp=drive_link"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Team Poster
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-
-
-
-          <div class="dated-entry">
-            <div class="dated-date">Feb 2024</div>
-            <div class="dated-content">
-              <b>Runner-up (2nd Place)</b>, Google Research & Data Science Graduate School @ Seoul Nat?�l University <br>
-              <small>
-                <strong>TorchXRay Detection </strong> @ <a href="https://research.google.com">ExploreCSR</a><br>
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Runner-up
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;">
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-
-          <div class="dated-entry">
-            <div class="dated-date">Sep 2023</div>
-            <div class="dated-content">
-              <b>Top 30</b>, Samsung Advanced Institute of Technology & DACON<br>
-              <small>
-                <strong>Camera Invariant Domain Adaptation</strong> @ <a
-                  href="https://dacon.io/en/competitions/official/236132/overview/description">Samsung AI Challenge
-                  2023</a>
-                <br>
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://dacon.io/en/competitions/official/236132/"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      <!-- TODO -->
-                      ?�� Top 30
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1AH5TUcBAKK5bkpeOMIJpUhuyyLC6Hf8Z/view"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Talent Pool Invitation (Samsung Electronics)
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-
-
-          <div class="dated-entry">
-            <div class="dated-date">Dec 2022 - Mar 2023</div>
-            <div class="dated-content">
-              <b>Finalist (Top 30) </b>, LG AI Research & DACON<br>
-              <small>
-                <strong>Smart Factory Product Quality Status Classification</strong> @ <a href="https://www.lgai.com">LG
-                  Aimers</a><br>
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
-                      <!-- TODO -->
-                      ?�� Finalist (Top 30)
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Presentation
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-
-          <div class="dated-entry">
-            <div class="dated-date">May 2023</div>
-            <div class="dated-content">
-              <b>Grand Prize (1st Prize)</b>, <a
-                href="https://www.gangseo.seoul.kr/reserve/re040101/view?aplySn=44&curPage=1">Gangseo-gu</a><br>
-              <small>
-                <strong>Risk Rating Model for Small Business Owners using the Credit Rating Model </strong>@ Gangseo-gu
-                Data Contest
-              </small>
-
-              <!-- <small>
-                <div style="display: flex; justify-content: flex-start;">
-                  <button class="main-button" style="margin-right: 10px;"
-                    onclick="location.href=''">Grand
-                    Prize </button><br>
-                  <button class="main-button"
-                    onclick="location.href=''"> Presentation</button><br>
-                </div>
-              </small> -->
-              <small>
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1FFU6qle13KTmfLw6lo_hPR1w7uPOuGqH/view?usp=sharing"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Grand Prize
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1RZwCfd_85QVnvTPo-msdA2zBcobjPSSI/view?usp=sharing"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Presentation
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Dec 2022</div>
-            <div class="dated-content">
-              <b>Grand Prize (Runner-up)</b>,
-              <a href="https://www.nia.or.kr/site/nia_kor/main.do">Nat?�l Information Society Agency</a>, <a
-                href="https://www.msit.go.kr/index.do">Ministry of Science & Technology</a></light>
-              <br>
-              <!-- BIGCONTEST Data Analytics Innovation League 2022 Grand Prize (Runner-Up)<br> -->
-
-
-              <small>
-                <strong>Jeju Island Travel Route Recommender System for Eco-Friendly & Gen-MZ </strong> @ BIGCONTEST
-                Innovation League
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/151VNDxsmgUTVG-jY-S0Un1kOCpXDBjil/view"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Grand Prize
-                      <!-- (Nat?�l Information Society Agency (NIA) President Award) -->
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span><br>
-
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://springfall137.github.io/DAVENGERS"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Official Link
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span><br>
-
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1exwZYFZGr4SERyfWMUiXnnF3c1Q4u3J-/view?usp=sharing"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?���?Speech (Shinhan Bank & World Bank)
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">May 2018</div>
-            <div class="dated-content">
-              <b>Excellence Prize</b>, Chungnam Office of Education <br>
-
-              <small>
-                <strong>Solar Power System considering the impact of wave height</strong> @ Chung-nam Science Fair
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <!-- TODO -->
-                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Excellence Prize
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/12aQOG77AQNmd1SbOz4L0-_XBiEIdC9OX/view"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Poster
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">May 2018</div>
-            <div class="dated-content">
-              <b>Special Prize</b>, Chungnam Office of Education <br>
-
-              <small>
-                <strong>Smart Laser Cutting Machine Using Mechanum Wheels</strong> @ Chung-nam Science Fair
-                <div style="display: flex; justify-content: flex-start;">
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <!-- TODO -->
-                    <a href="" style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Special Prize
-                      <span
-                        style="background-color: #fdffc6; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                  <span style="position: relative; display: inline-block; margin-right: 10px; font-size: 14px;">
-                    <a href="https://drive.google.com/file/d/1VPgyaLFwZs51p9T1rbARIPho4eFRHCOz/view"
-                      style="color: #003478; text-decoration: none; position: relative;">
-                      ?�� Poster
-                      <span
-                        style="background-color: #f0f8ff; position: absolute; left: 0; bottom: -3px; height: 5px; width: 100%; z-index: -1;"></span>
-                    </a>
-                  </span>
-                </div>
-              </small>
-
-            </div>
-          </div>
-        </section>
-
-        <section id="Scholarships">
-          <h2>Scholarships</h2>
-          <div class="dated-entry">
-            <div class="dated-date">2020-2023</div>
-            <div class="dated-content">
-              <b>Sogang Alumni Scholarship</b>, Sogang U. Alumni<br>
-              1-semester full scholarship
-              <small>
-                <br> General Scholarships on 2020 Spring
-                <br> oconnect Scholarships on 2022 Fall
-                <br> Villarreal Priest Scholarships 2023 Spring ~ 2024 Spring (Founded by CEO of SMILEGATE)
-              </small>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Mar 2019</div>
-            <div class="dated-content">
-              <b>Sogang Albatross Scholarship</b>, Sogang U.<br>
-              1-year full scholarship for talent in SW Fields
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Mar 2017</div>
-            <div class="dated-content">
-              <b>Do Young-Kyu Scholarship</b>, Do Young-Kyu, Emeritus Professor of KAIST
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Mar 2017</div>
-            <div class="dated-content">
-              <b>Kongju Myunghak Scholarship</b>,
-              <a href="http://mhscholarship.or.kr/">Kongju Myunghak Scholarship</a><br>
-              1-semester full scholarship (2017)
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Apr 2016</div>
-            <div class="dated-content">
-              <b>Samsung Dream Scholarship</b>,
-              <a href="https://www.sdream.or.kr/main">Samsung Dream Scholarship Foundation</a>
-              <br>
-              1-year full scholarship (2016)
-            </div>
-          </div>
-        </section>
-
-
-        </section>
-        <section id="certificates">
-          <h2>Certificates</h2>
-          <div class="dated-entry">
-            <div class="dated-date">Oct 2021 - Oct 2024</div>
-            <div class="dated-content">
-              <b href="https://www.credential.net/1be566a4-99f6-4924-9aae-6da9849a7ede#gs.di57x5">Certificate in
-                Tensorflow Developers</b>, Tensorflow Certificate Program
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Apr 2021</div>
-            <div class="dated-content">
-              <b><a href="https://drive.google.com/file/d/10puHr2Sx50nYuO4Kvwok21eHVkh-cxXg/view"> Advanced Data
-                  Analytics Semi-Professional</a></b>
-              <a href="https://www.kdata.or.kr/">Korea Data Agency</a>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Oct 2011</div>
-            <div class="dated-content">
-              <b>
-                <a href="https://drive.google.com/file/d/1fFC07HdVM503MIilDFu1RA1lsehfTmH9/view">ITQ OA Master</a>
-              </b>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">Oct 2011</div>
-            <div class="dated-content">
-              <b>
-                <a href="https://drive.google.com/file/d/1NVSU2YuIR9KetIyaMwFBS0xzZulLiaL9/view?usp=sharing">GTQ
-                  Lv.2</a>
-              </b>
-            </div>
-          </div>
-        </section>
-
-
-        <!-- <section id="activities">
-            <h2>Activities</h2>
-            <div class="dated-entry">
-              <div class="dated-date">Sep 2023</div>
-              <div class="dated-content">
-                <b>Samsung AI Challenge 2023</b>, Samsung Advanced Institute of Technology
-                <br>
-                <small>
-                  [Subject] Camera Invariant Domain Adaptation
-                  <br> Top 30, Invited as the talent pool of Samsung Electronics
-                </small>
-              </div>
-            </div>
-            <div class="dated-entry">
-              <div class="dated-date">Sep 2022 - June 2023</div>
-              <div class="dated-content">
-                <b>INSIGHT</b>, Business School of Sogang University
-                <br>
-                <small>Undergraduate Data Science Study Group</small>
-              </div>
-            </div>
-
-            <div class="dated-entry">
-              <div class="dated-date">Dec 2022 - Mar 2023</div>
-              <div class="dated-content">
-                <b>LG Aimers : Data Intelligence</b> LG AI Research & DACON
-                <small>
-                  <br>[Subject] Smart Factory Product Quality Status Classification AI Online Hackathon<br>
-                  [Phase 3] Online Hackathon Finalist, Phase 2 Top 29 (3%, 29/891)
-                </small>
-              </div>
-            </div> -->
-
-        <!-- <div class="dated-entry">
-              <div class="dated-date">Oct 2021 - Nov 2021</div>
-              <div class="dated-content">
-                <b>Google Code Jam</b>, Google<br>
-                Round 1
-              </div>
-            </div>
-
-            <div class="dated-entry">
-              <div class="dated-date">Sep 2021 - Dec 2021</div>
-              <div class="dated-content">
-                <b>Google Machine Learning BootCamp</b>, Google Korea
-              </div>
-            </div>
-
-            <div class="dated-entry">
-              <div class="dated-date">Mar 2019 - Present</div>
-              <div class="dated-content">
-                <b>Sogang ICPC Team / Release </b>, Sogang U. CSE<br>
-                Algorithm Problem Solving Group
-              </div>
-            </div> -->
-        <!-- </section> -->
-
-        <section id="Medias">
-          <h2>Medias</h2>
-          <div class="dated-entry">
-            <div class="dated-date">2023</div>
-            <div class="dated-content">
-              <b>'Nunettine' wins Grand Prize at Gangseo-gu Big Data Contest</b>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">2022</div>
-            <div class="dated-content">
-              <b>'DAVENGERS' wins '22 BIGCONTEST Data Analytics Innovation League</b>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">2022</div>
-            <div class="dated-content">
-              <b>UNIST venture 'OCONNECT' wins James Dyson Awards 2022</b>
-            </div>
-          </div>
-        </section>
-        <section id="speech">
-          <h2>Speech</h2>
-
-          <div class="dated-entry">
-            <div class="dated-date">Dec 2023</div>
-            <div class="dated-content">
-              <b>Camera Invariant Domain Adaptation - Reminiscence for Samsung AI Challenge</b><br>
-              <small>
-                Presentation at Release, Sogang Computer Science Study Group <br>
-                Collaborated with <a href="https://typednow.com">Hyunjae Kim </a><br>
-                <button class="button" style="left"
-                  onclick="location.href='https://drive.google.com/file/d/19zF3f-9vLC4RSb9fXOn7W2s2cPoyKFHC/view'">Presentation</button>
-                <button class="button" style="left" onclick="location.href='https://typednow.com/?p=239'">Blog</button>
-              </small>
-            </div>
-          </div>
-
-          <div class="dated-entry">
-            <div class="dated-date">May 2023</div>
-            <div class="dated-content">
-              <b>Carbon Neutral Workshop of Shinhan Card & World Bank</b><br>
-              <small>
-                World Bank Workshop to Share Carbon-Neutral Management Practices (Shinhan Card Data Biz Team)<br>
-                Attendee: Shinhan Card, <br> World Bank Chief Economist (Richard Damania, Jun Rentschler, Jason Russ ),
-                Prof. Hyungna Oh (Kyunghee U.)<br>
-                Team DAVENGERS: Speaker as a Winner of BIGCONTEST 2022<br>
-                <button class="button" style="float: left;"
-                  onclick="location.href='https://drive.google.com/file/d/1exwZYFZGr4SERyfWMUiXnnF3c1Q4u3J-/view?usp=sharing'">Presentation</button>
-              </small>
-            </div>
-          </div>
-          <div class="dated-entry">
-            <div class="dated-date">Mar 2023</div>
-            <div class="dated-content">
-              <b>YOLOv8 Seminar </b><br>
-              <small>
-                "Deep Dive into YOLOv8" Seminar for all employs of Nota Inc.
-                <br>
-                Analysis the architecture and methodology introduced or utilized in v8 in depth
-
-                <br><button class="button" style="left"
-                  onclick="location.href='https://drive.google.com/file/d/1DTspxtaP3RQmM72VkgVP3dvdASvjdiXC/view'">Presentation</button><br>
-              </small>
+              ANSYS, NX, STAR-CCM+, Abaqus, SolidWorks, COMSOL Multiphysics
             </div>
           </div>
         </section>
@@ -730,49 +273,37 @@ description: Curriculum vitae of Dahyun Joo
   </div>
 </div>
 
-
-<script>
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-  })
-
-  // // ?�크롤에 ?�라 TOC ?�치 조정?�는 ?�크립트 (?�택??
-  // window.addEventListener('scroll', function () {
-  //   var scrolledHeight = window.pageYOffset;
-  //   var tocElement = document.querySelector('.toc-container');
-  //   var offset = 100; // TOC가 ?�단?�서 ?�마???�어???�어???�는지
-
-  //   if (scrolledHeight > offset) {
-  //     tocElement.style.top = (scrolledHeight + 10) + 'px';
-  //   } else {
-  //     tocElement.style.top = (offset + 10) + 'px';
-  //   }
-  // });
-
-</script>
-
 <style>
-  /* TOC ?��???*/
+  html {
+    scroll-behavior: smooth;
+  }
+
   .toc-container {
     position: fixed;
-    right: 10px;
+    right: 20px;
     top: 100px;
     z-index: 1000;
-    max-width: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .toc-container {
+      display: none;
+    }
   }
 
   .toc {
     border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   }
 
   .toc strong {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #111;
   }
 
   .toc ul {
@@ -783,179 +314,64 @@ description: Curriculum vitae of Dahyun Joo
 
   .toc ul li a {
     text-decoration: none;
-    color: #007bff;
+    color: #6b7280;
     display: block;
-    padding: 5px 0;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    transition: color 0.2s;
   }
 
   .toc ul li a:hover {
-    text-decoration: underline;
+    color: #2563eb;
   }
 
-  button {
-    padding: 5px 10px;
-    /* ?�하 10px, 좌우 20px ?�딩?�로 ?�스??주�? ?�유 공간 추�? */
-    font-size: 0.87rem;
-    /* 글???�기 */
-    color: white;
-    /* 글???�상 */
-    background-color: #007bff;
-    /* 배경 ?�상 */
-    border: none;
-    /* ?�두�??�거 */
-    border-radius: 5px;
-    /* 모서�??��?�?*/
-    cursor: pointer;
-    /* 커서 모양 변�?*/
-    transition: background-color 0.3s;
-    /* ?�버 ?�과�??�한 ?�환 ?�정 */
-    text-align: center;
-    /* 글?��? 버튼 중앙???�치 */
-    display: inline-block;
-    /* ?�라??블록 ?�소�??�정?�여 ?�연?�럽�??�스??중앙 ?�렬 */
-    line-height: normal;
-    /* 기본 ?�인 ?�이 ?�정 */
-    vertical-align: middle;
-    /* ?�직 방향?�로 중앙 ?�렬 */
-    margin-top: 5px;
-  }
-
-  button:hover {
-    background-color: #0056b3;
-    /* ?�버 ??배경 ?�상 변�?*/
-  }
-
-
-  /* reset base styles */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* page header */
-  header {
-    margin-bottom: 2rem;
-    padding-left: 6.5rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  header p {
-    margin: .5rem 0;
-    font-size: 1rem !important
-  }
-
-  main b {
-    font-weight: 500
-  }
-
-  /* normal body content */
-  h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    margin-left: 6.5rem;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    border-bottom: 1px solid black;
-    font-size: .9rem;
-    margin: 1rem 0 .5rem 6.5rem
-  }
-
-  p {
-    margin-bottom: 0.5rem;
-  }
-
-  a {
-    color: inherit;
-    /*#0000ee;*/
-  }
-
-  section {
-    margin-bottom: 3rem;
-  }
-
-  /* misc */
-  .pdf {
-    font-size: .9rem !important;
-    font-weight: 300;
-    margin-left: 1.5rem;
-    white-space: nowrap;
-  }
-
-  .pdf i {
-    margin-right: .1rem;
-  }
-
-  .material {
-    font-size: small;
-    margin-left: .5rem;
-  }
-
-  :global(i) {
-    padding-right: 4px !important
-  }
-
-  /* dated entries */
   .dated-entry {
     display: flex;
-    flex-flow: row wrap;
-    position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
   }
 
   .dated-date {
-    width: 6.5rem;
-    text-align: right;
-    padding-top: .15rem;
+    width: 25%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
     padding-right: 1.5rem;
-    font-size: .8rem
+    flex-shrink: 0;
   }
 
   .dated-content {
-    width: calc(100% - 6.5rem);
-    font-size: .95rem
+    width: 75%;
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
   }
 
-  .oneline-entries {
-    margin-bottom: 0.5rem;
+  .dated-content b {
+    color: #111827;
+    font-weight: 600;
   }
 
-  .oneline-entries .dated-entry {
-    margin-bottom: 0;
+  .dated-content small {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.5;
   }
 
-  /* hide extra awards info for now, not sure what to include */
-  #awards em {
-    display: none;
-  }
-
-  .author-tooltip {
-    font-weight: 400;
-    font-size: .8rem !important;
-    text-align: center;
-  }
-
-  /* on narrow displays, make the font smaller */
-  @media (max-width: 480px) {
-    html {
-      font-size: 14px;
-    }
-  }
-
-  /* when printing, make the font smaller and the page full-width */
-  @media print {
-    html {
-      font-size: 12px;
+  @media (max-width: 768px) {
+    .dated-entry {
+      flex-direction: column;
     }
 
-    main {
-      margin-top: 0;
-      max-width: 100%;
+    .dated-date {
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+
+    .dated-content {
+      width: 100%;
     }
   }
 </style>
