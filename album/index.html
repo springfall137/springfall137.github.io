@@ -97,8 +97,9 @@ permalink: /album/
         font-size: 0.9rem;
         font-weight: 400;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
         overflow: hidden;
     }
 
@@ -129,8 +130,12 @@ permalink: /album/
         {% for post in posts %}
         <div class="ig-post">
             {% if post.video %}
+            {% if post.video contains '.mp4' %}
+            <video class="ig-media" src="{{ post.video }}" autoplay loop muted playsinline></video>
+            {% else %}
             <!-- For video posts, show a thumbnail image if possible, or embed directly -->
             <iframe class="ig-media" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
             {% elsif post.image %}
             <img class="ig-media" src="{{ post.image }}" alt="Album post" loading="lazy">
             {% endif %}
