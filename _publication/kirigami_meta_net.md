@@ -5,6 +5,10 @@ year: 2026
 month: 1
 authors:
   - Dahyun Joo
+  - Yasuhiro Miyazawa
+  - Seokhyun Hong
+  - Jinkyu Yang
+  - Do-Nyun Kim
 venue: >
   <em>in preparation</em>
 
