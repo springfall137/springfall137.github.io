@@ -7,7 +7,7 @@ authors:
   - Dahyun Joo
   - Yasuhiro Miyazawa
   - Seokhyun Hong
-  - D. Lee
+  - Dongha Lee
   - Jinkyu Yang
   - Do-Nyun Kim
 venue: >
