@@ -131,7 +131,8 @@ description: Department of Mechanical Engineering, Seoul National University
                         </div>
                     </div>
                     <div class="dated-content" style="font-size: .95rem; font-weight: 300;">
-                        <medium>M.S. in Mechanical Engineering<br>
+                        <medium>M.S. in Mechanical Engineering - <span
+                                style="color: #be185d; font-weight: bold; font-style: italic;">GPA 4.0/4.0</span><br>
                             AI-driven Simulation and Design Lab (AISDL) (Advisor: Prof. Do-Nyun Kim)</medium>
                     </div>
                 </div>
@@ -150,8 +151,10 @@ description: Department of Mechanical Engineering, Seoul National University
                         <medium>B.S. in Physics (Minor in Mechanical Engineering) - <span
                                 style="color: #be185d; font-weight: bold; font-style: italic;">Cum
                                 Laude</span><br>
-                            (Thesis: wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation
-                            Functions)<br>
+                            (Thesis: <a href="{{ '/assets/thesis/DahyunJoo_BS_Thesis_Physics.pdf' | relative_url }}"
+                                    style="color: inherit; text-decoration: underline;">wPINNs: Enhancing
+                                    Physics-Informed Neural Networks with Wavelet Activation
+                                    Functions</a>)<br>
                             <span style="font-size: 0.85rem; color: #666;">* Compulsory Military Service (Jul. 2021 ~
                                 Apr. 2023, Republic of Korea Air Force)</span>
                         </medium>
@@ -177,18 +180,7 @@ description: Department of Mechanical Engineering, Seoul National University
 
 
 
-                <div class="dated-entry mb-6">
-                    <div class="d-flex justify-content-between">
-                        <div class="dated-date" style="font-size: 1rem; font-weight: 500;">
-                            <i class="fa-solid fa-graduation-cap" style="margin-right: .5rem;"></i>
-                            <span><b>American School of Yaoundé</b></span>
-                        </div>
-                        <div class="dated-date" style="font-size: .95rem; font-weight: 300;">
-                            ~ 2015
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </div>
 
@@ -225,6 +217,47 @@ description: Department of Mechanical Engineering, Seoul National University
     </div>
     <div class="d-flex flex-row-reverse mt-2">
         <a href="/publication/" style="font-size: .95rem; font-weight: 500 !important;">&gt; View All</a>
+    </div>
+</div>
+
+
+<div class="container py-4">
+    <div class="row pb-2">
+        <h2 style="font-weight: 800 !important; text-transform: uppercase;">Bachelor's Thesis</h2>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <p style="font-size: .95rem; font-weight: 300 !important;">
+                <strong>wPINNs: Enhancing Physics-Informed Neural Networks with Wavelet Activation Functions</strong><br>
+                Proposed a novel wavelet-based PINN architecture to capture multi-scale features and sharp gradients in fluid dynamics, effectively simulating complex Karman vortex shedding.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center mt-3" style="gap: 1.5rem;">
+                <div class="text-center" style="flex: 1; min-width: 200px;">
+                    <img src="{{ '/assets/thesis/nav_pinn_original.png' | relative_url }}" alt="PINN" class="img-fluid rounded shadow-sm"
+                        style="max-height: 150px; width: auto;">
+                    <p style="font-size: 0.8rem; margin-top: 8px; color: #666;">PINN</p>
+                </div>
+                <div class="text-center" style="flex: 1; min-width: 200px;">
+                    <img src="{{ '/assets/thesis/nav_pinnsformer-original.png' | relative_url }}" alt="PINNsFormer"
+                        class="img-fluid rounded shadow-sm" style="max-height: 150px; width: auto;">
+                    <p style="font-size: 0.8rem; margin-top: 8px; color: #666;">PINNsFormer</p>
+                </div>
+                <div class="text-center" style="flex: 1; min-width: 200px;">
+                    <img src="{{ '/assets/thesis/nav_wpinn_original.png' | relative_url }}" alt="wPINN" class="img-fluid rounded shadow-sm"
+                        style="max-height: 150px; width: auto; border: 2px solid #be185d;">
+                    <p style="font-size: 0.8rem; margin-top: 8px; color: #be185d; font-weight: 600;">wPINN (Proposed)
+                    </p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="{{ '/assets/thesis/DahyunJoo_BS_Thesis_Physics.pdf' | relative_url }}"
+                    class="btn btn-outline-dark d-flex align-items-center shadow-sm"
+                    style="padding: 0.55rem 1.2rem; font-size: 0.9rem; border-radius: 0.5rem; width: fit-content;"
+                    target="_blank">
+                    <i class="fa-solid fa-file-pdf me-2"></i> Read Thesis (PDF)
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
