@@ -1,6 +1,11 @@
 project:
+  - title: "Samsung Display: AI-driven Hinge Pattern Discovery"
+    description: "Surrogate modeling & FEM verification (2026–2027)"
+    image: "samsung_display.png"
+    collaborators:
+
   - title: "Samsung Display: Bistable Kirigami Integration"
-    description: "Curved Display Corner Integration"
+    description: "Curved Display Corner (2025–2026)"
     image: "samsung_display.png"
     collaborators:
       
@@ -14,7 +19,7 @@ project:
     image: "ai_factory.gif"
     collaborators:
 
-  - title: "Semiconductor Solverton Competition"
+  - title: "STOB League: Semiconductor Solverton"
     description: "Top Prize (Deputy Prime Minister Award)"
     image: "solverton.jpg"
     collaborators:

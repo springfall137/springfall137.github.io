@@ -1,4 +1,18 @@
 project:
+  - title: "Samsung Display: AI-driven Pattern Discovery for Hinge Deformation"
+    image: samsung_display.png
+    detail: >
+      <p>Built an automated workflow for <strong>2D pattern modeling and simulation</strong> across diverse <strong>unit-cell</strong> and <strong>hinge geometry</strong> parameters, generating datasets for AI training.</p>
+      <p>Developed an <strong>AI-based surrogate model</strong> to predict <strong>hinge strain</strong> and identify geometries minimizing local deformation; verified performance improvement through <strong>FEM comparison</strong> with baseline patterns.</p>
+    tags:
+      - Samsung Display
+      - AI
+      - FEM
+      - Surrogate Model
+    description: >-
+      AI-driven pattern discovery for improved hinge deformation behavior (Mar 2026 – Feb 2027).
+    id: samsung_display_hinge
+
   - title: "Samsung Display: Bistable Kirigami Integration for Curved Display Corner"
     image: samsung_display.png
     detail: >
@@ -9,20 +23,20 @@ project:
       - Display
       - Mechanics
     description: >-
-      Integrated a bistable kirigami pattern into curved-display corner regions.
+      Bistable kirigami for curved-display corner regions (Mar 2025 – Feb 2026).
     id: samsung_display
 
   - title: "LG Electronics: Kirigami-Enhanced Pulp-Mold Packaging for Impact Absorption"
     image: lg_electronics.png
     detail: >
-      <p>Applied kirigami patterns to pulp-mold packaging to increase deformation stroke and improve energy absorption without adding bulk material.</p>
+      <p>Applied <strong>kirigami patterns</strong> to <strong>pulp-mold packaging</strong> to improve <strong>impact absorption</strong> in sustainable packaging systems, contributing to <strong>eco-friendly material design in large-scale manufacturing contexts</strong>.</p>
       <p>Developed practical pattern guidelines considering pulp-mold forming constraints; summarized expected mechanical behavior and prototyping directions.</p>
     tags:
       - Kirigami
       - Packaging
       - Impact Absorption
     description: >-
-      Applied kirigami patterns to pulp-mold packaging to increase deformation stroke.
+      Kirigami-enhanced pulp-mold packaging for impact absorption (Jun 2025 – Sep 2025).
     id: lg_electronics
 
   - title: "AI Factory Hackathon"
@@ -38,11 +52,11 @@ project:
       AI model development and implementation at AI Factory Hackathon.
     id: ai_factory
 
-  - title: "Semiconductor Solverton Competition Top Prize"
+  - title: "STOB League: Semiconductor Solverton Competition, Top Prize"
     image: solverton.jpg
     detail: >
-      <p>Optimized AC performance of GAA NS FET by analyzing and optimizing resistance, capacitance, and frequency gain compared to FinFET through structural modeling and process-driven device design.</p>
-      <p>Proposed a new design with enhanced performance via TCAD simulation. Recognized with the Deputy Prime Minister and Education Minister Prize.</p>
+      <p>Deputy Prime Minister and Education Minister Prize.</p>
+      <p>Optimized AC performance of GAA NS FET via structural modeling and process-driven device design; analyzed resistance, capacitance, and frequency gain vs. FinFET; proposed enhanced design via TCAD.</p>
     tags:
       - Semiconductor
       - TCAD
