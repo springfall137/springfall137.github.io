@@ -64,3 +64,42 @@ project:
     description: >-
       Optimized AC performance of GAA NS FET in the Semiconductor Solverton.
     id: solverton
+
+  - title: "CFD Engineer — Rocket Pre-startup Kspace (Injector Design) - CFD Modeling"
+    image: swirl_injector.jpg
+    detail: >
+      <p><strong>Date: February 10, 2020</strong></p>
+      <p>Successfully implemented a swirl injector through Computational Fluid Dynamics (CFD). This task was a foundational step for designing the rocket injector.</p>
+    tags:
+      - CFD
+      - Aerospace
+      - Injector
+    description: >-
+      Implemented a swirl injector through CFD for injector design (Feb 10, 2020).
+    id: kspace_swirl_cfd
+
+  - title: "CFD Engineer — Rocket Pre-startup Kspace (Injector Design) - Spray Test"
+    image: swirl_injector_real.mp4
+    detail: >
+      <p><strong>Date: March 7, 2021</strong></p>
+      <p>Company engineers manufactured the actual injector physical model. We validated the conformity and accuracy between my initial CFD predictions and the actual injector's spray angle.</p>
+    tags:
+      - Validation
+      - Spray Test
+      - Injector
+    description: >-
+      Validated conformity between CFD results and the actual injector spray angle (Mar 7, 2021).
+    id: kspace_swirl_real
+
+  - title: "CFD Engineer — Rocket Pre-startup Kspace (Injector Design) - Ignition Test"
+    image: swirl_injector_fire.mp4
+    detail: >
+      <p><strong>Date: March 7, 2021</strong></p>
+      <p>Following the spray angle validation, an actual ignition test was successfully conducted with the real manufactured swirl injector.</p>
+    tags:
+      - Validation
+      - Ignition Test
+      - Injector
+    description: >-
+      Actual ignition experiment using the manufactured swirl injector (Mar 7, 2021).
+    id: kspace_swirl_fire
