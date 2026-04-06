@@ -770,9 +770,9 @@ description: Department of Mechanical Engineering, Seoul National University
         {% for project in projects limit: 4 %}
         <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
             {% assign img_url = '/assets/images/project/' | append: project.image | relative_url %}
-            {% if project.image contains '.mp4' %}
+            {% if project.image contains '.mp4' or project.image contains '.gif' %}
             <video src="{{ img_url }}" autoplay loop muted playsinline
-                style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;"></video>
+                style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;" {% if project.title contains "AI Factory" %}data-playback-rate="2.0"{% endif %}></video>
             {% else %}
             <img src="{{ img_url }}" alt=""
                 style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
@@ -787,6 +787,11 @@ description: Department of Mechanical Engineering, Seoul National University
         <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View
             All</a>
     </div>
+    <script>
+        document.querySelectorAll('video[data-playback-rate]').forEach(video => {
+            video.playbackRate = parseFloat(video.dataset.playbackRate);
+        });
+    </script>
 </div>
 
 

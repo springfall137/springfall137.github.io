@@ -42,6 +42,7 @@ project:
   - title: "AI Factory Hackathon"
     image: ai_factory.gif
     aspect_ratio: "1/1"
+    playback_rate: 2.0
     detail: >
       <p>Participated in the AI Factory Hackathon to develop innovative AI models designed to solve practical and real-world problems.</p>
       <p>Focused on efficient data preprocessing, model tuning, and algorithm configuration to provide optimal solutions under the given competition scenarios.</p>
