@@ -17,13 +17,15 @@ description: Projects of Dahyun Joo
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
             <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
                 {% if proj.images %}
-                <div id="carousel-{{ forloop.index }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                <div id="carousel-{{ forloop.index }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
                     <div class="carousel-inner">
                         {% for img in proj.images %}
                         {% assign img_url = img | prepend: '/assets/images/project/' | relative_url %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="8000">
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="4000">
                             {% if img contains '.mp4' %}
                             <video class="archive-img d-block w-100" src="{{ img_url }}" autoplay loop muted playsinline style="width: auto; max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;" {% if proj.playback_rate %}data-playback-rate="{{ proj.playback_rate }}"{% endif %}></video>
+                            {% elsif img contains '.gif' %}
+                            <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                             {% else %}
                             <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                             {% endif %}
@@ -44,6 +46,9 @@ description: Projects of Dahyun Joo
                 {% if proj.image contains '.mp4' %}
                 <video class="archive-img" src="{{ img_url }}" autoplay loop muted playsinline
                     style="width: auto; max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;" {% if proj.playback_rate %}data-playback-rate="{{ proj.playback_rate }}"{% endif %}></video>
+                {% elsif proj.image contains '.gif' %}
+                <img class="archive-img" src="{{ img_url }}" loading="lazy"
+                    style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                 {% else %}
                 <img class="archive-img" src="{{ img_url }}" loading="lazy"
                     style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
