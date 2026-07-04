@@ -67,7 +67,7 @@
   <!-- Opengraph -->
   <meta property="og:type" content="website">
   <meta property="og:image"
-    content="{% if page.slug %}{{ '/assets/images/main/favicon/og.png' | append: page.slug | append: '.jpg' | relative_url }}{% else %}{{ '/assets/images/main/favicon/og.png' | relative_url }}{% endif %}">
+    content="{% if page.slug %}{{ '/assets/images/main/favicon/og.png' | append: page.slug | append: '.jpg' | relative_url }}{% else %}{{ '/assets/images/main/favicon/og.png?v=2' | relative_url }}{% endif %}">
   <meta property="og:title"
     content="{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | Dahyun Joo{% endif %}">
   <meta property="og:description"
