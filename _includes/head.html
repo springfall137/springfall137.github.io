@@ -28,8 +28,9 @@
     crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
-  <!-- GA -->
+  <!-- GA & Private Visitor Tracker -->
   {% include google-analytics.html %}
+  <script src="{{ '/assets/js/visitor_tracker.js' | relative_url }}" async></script>
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/images/main/favicon/favicon.ico' | relative_url }}">
