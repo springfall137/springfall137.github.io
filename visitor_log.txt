@@ -1,9 +1,0 @@
-================================================================================
-DAHYUN JOO WEBSITE - PRIVATE VISITOR LOG RECORD (ADMIN ONLY)
-================================================================================
-This file records website visitor metrics privately for admin review.
-No public counter badges or visitor numbers are shown on the website.
-
-Format: [Date & Time (KST)] | [Country] | [Page Path] | [Visitor Notes]
---------------------------------------------------------------------------------
-2026-08-14 17:43:00 KST | Korea, Republic of (KR) | / | Admin System Initialization
