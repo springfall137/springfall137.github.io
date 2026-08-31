@@ -39,20 +39,24 @@ project:
       Kirigami-enhanced pulp-mold packaging for impact absorption (Jun 2025 – Sep 2025).
     id: lg_electronics
 
-  - title: "AI Factory Hackathon"
-    image: ai_factory.gif
-    aspect_ratio: "1/1"
-    playback_rate: 2.0
+  - title: "DeepQC: AI Agent for Industrial Defect Analysis & Quality Control"
+    images:
+      - AI_Factory_Hackathon_2025.jpg
+      - deepqc_poster.png
+    aspect_ratio: "4/3"
+    object_position: "top"
+    slide: "DeepQC_Factory_Hack_Korea_Poster.pdf"
     detail: >
-      <p>Participated in the AI Factory Hackathon to develop innovative AI models designed to solve practical and real-world problems.</p>
-      <p>Focused on efficient data preprocessing, model tuning, and algorithm configuration to provide optimal solutions under the given competition scenarios.</p>
+      <p>Developed <strong>DeepQC</strong>, an end-to-end <strong>multimodal AI agent system</strong> for automated defect classification, localization, and root-cause explanation across industrial manufacturing domains (capsules, leather, and tiles) at Factory Hack Korea 2025.</p>
+      <p>Architected a modular 4-stage pipeline integrating robust data augmentation, <strong>SVM & YOLOv11</strong> for coarse-to-fine defect categorization, <strong>SegFormer</strong> for high-resolution binary defect segmentation, and <strong>Multimodal LLM (Qwen)</strong> prompting to generate human-interpretable natural language reports detailing defect position, morphology, and severity.</p>
     tags:
-      - AI
-      - Hackathon
-      - Data Analysis
+      - Multimodal AI
+      - Computer Vision
+      - LLM Agent
+      - Quality Control
     description: >-
-      AI model development and implementation at AI Factory Hackathon.
-    id: ai_factory
+      Multimodal AI agent system integrating YOLOv11, SegFormer, and LLMs for industrial defect analysis and automated explanation (Factory Hack Korea 2025).
+    id: deepqc_ai_agent
 
   - title: "GAA NS FET AC Performance Optimization & Device Design"
     image: GAA_NS_FET.png

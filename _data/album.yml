@@ -15,6 +15,10 @@ list:
     caption: "Another fun day of experiments in the lab! 🧪🔬 Hoping for some great results!"
     date: "2025-12-17"
 
+  - image: "/album/album_assets/Dec-16-2025PresentingAtFactoryHackKorea.jpg"
+    caption: "Presenting our AI defect analysis agent 'DeepQC' at Factory Hack Korea 2025! 💡🏭"
+    date: "2025-12-16"
+
   - image: "/album/album_assets/Nov-26-2025FirstTimeWithPolyjet.jpg"
     caption: "First time trying out the Polyjet printer! 🤩🎨 It's like a whole new world!"
     date: "2025-11-26"

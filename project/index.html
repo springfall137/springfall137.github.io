@@ -25,9 +25,9 @@ description: Projects of Dahyun Joo
                             {% if img contains '.mp4' %}
                             <video class="archive-img d-block w-100" src="{{ img_url }}" autoplay loop muted playsinline style="width: auto; max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;" {% if proj.playback_rate %}data-playback-rate="{{ proj.playback_rate }}"{% endif %}></video>
                             {% elsif img contains '.gif' %}
-                            <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                            <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% if proj.object_position %} object-position: {{ proj.object_position }};{% endif %}{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                             {% else %}
-                            <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                            <img class="archive-img d-block w-100" src="{{ img_url }}" loading="lazy" style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% if proj.object_position %} object-position: {{ proj.object_position }};{% endif %}{% endif %} max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                             {% endif %}
                         </div>
                         {% endfor %}
@@ -48,10 +48,10 @@ description: Projects of Dahyun Joo
                     style="width: auto; max-width: 100%; display: block; margin: 0 auto; border-radius: 0.375rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;" {% if proj.playback_rate %}data-playback-rate="{{ proj.playback_rate }}"{% endif %}></video>
                 {% elsif proj.image contains '.gif' %}
                 <img class="archive-img" src="{{ img_url }}" loading="lazy"
-                    style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                    style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% if proj.object_position %} object-position: {{ proj.object_position }};{% endif %}{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                 {% else %}
                 <img class="archive-img" src="{{ img_url }}" loading="lazy"
-                    style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                    style="width: {% if proj.aspect_ratio %}100%{% else %}auto{% endif %}; {% if proj.aspect_ratio %}aspect-ratio: {{ proj.aspect_ratio }}; object-fit: {{ proj.object_fit | default: 'cover' }};{% if proj.object_position %} object-position: {{ proj.object_position }};{% endif %}{% endif %} max-width: 100%; display: block; margin: 0 auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                 {% endif %}
                 {% endif %}
                 <div class="archive-container-inner">
