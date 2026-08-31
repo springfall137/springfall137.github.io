@@ -348,6 +348,8 @@ h4 {
   .archive-container {
     border: .5px solid #999;
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.375rem;
 }
 .archive-container-inner {
     padding: 0 15px 15px 15px;
