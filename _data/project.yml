@@ -41,10 +41,11 @@ project:
 
   - title: "DeepQC: AI Agent for Industrial Defect Analysis & Quality Control"
     images:
-      - AI_Factory_Hackathon_2025.jpg
-      - deepqc_poster.png
-    aspect_ratio: "4/3"
-    object_position: "top"
+      - src: AI_Factory_Hackathon_2025.jpg
+        position: bottom
+      - src: deepqc_poster.png
+        position: top
+    aspect_ratio: "3/4"
     slide: "DeepQC_Factory_Hack_Korea_Poster.pdf"
     detail: >
       <p>Developed <strong>DeepQC</strong>, an end-to-end <strong>multimodal AI agent system</strong> for automated defect classification, localization, and root-cause explanation across industrial manufacturing domains (capsules, leather, and tiles) at Factory Hack Korea 2025.</p>
