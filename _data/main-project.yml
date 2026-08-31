@@ -14,9 +14,9 @@ project:
     image: "lg_electronics.png"
     collaborators:
       
-  - title: "DeepQC: AI Agent for Defect Analysis"
-    description: "Multimodal LLM & Vision System (2025)"
-    image: "AI_Factory_Hackathon_2025.jpg"
+  - title: "AI Factory Hackathon"
+    description: "AI Model Development"
+    image: "ai_factory.gif"
     collaborators:
 
   - title: "STOB League: Semiconductor Solverton"
