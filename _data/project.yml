@@ -54,6 +54,21 @@ project:
       AI model development and implementation at AI Factory Hackathon.
     id: ai_factory
 
+  - title: "GAA NS FET AC Performance Optimization & Device Design"
+    image: GAA_NS_FET.png
+    paper: "SNU_Problem6_duGAAza team.pdf"
+    detail: >
+      <p>Formulated a <strong>segmented analytical modeling framework</strong> to quantify resistance and parasitic capacitance components in sub-3nm <strong>GAA NS FET</strong> architectures against FinFET baselines, demonstrating a <strong>28% AC frequency gain (\(1/RC\))</strong>.</p>
+      <p>Led comprehensive <strong>resistance breakdown</strong> (channel mobility, contact, spreading, and extension resistances) and parameter split optimization across 5 critical dimensions (nanosheet width, spacing, stack count, gate/spacer length) yielding an additional <strong>16% gain</strong>. Proposed and verified high-performance design alternatives—including <strong>PMOS Cladding eSiGe</strong>, <strong>Schottky-Barrier Engineering</strong>, and a novel <strong>CombFET</strong> hybrid geometry—via <strong>TCAD simulation</strong>.</p>
+    tags:
+      - Semiconductor
+      - GAA NS FET
+      - TCAD
+      - Analytical Modeling
+    description: >-
+      Analytical impedance modeling and TCAD-based AC performance optimization for GAA NS FET (Top Prize, Deputy Prime Minister Award).
+    id: gaa_ns_fet_optimization
+
   - title: "STOB League: Semiconductor Solverton Competition, Top Prize"
     image: solverton.jpg
     detail: >
