@@ -17,7 +17,7 @@ abstract: "Impact absorbers based on mechanical metamaterials often use bulky, v
 note: "Submitted; arXiv:2609.08362 [cs.CE], 2026."
 arxiv: "https://arxiv.org/abs/2609.08362"
 paper: "https://arxiv.org/pdf/2609.08362"
-image: "/publication/kirigami/fig1.png"
+image: "/publication/kirigami/fig1_cropped.png"
 category:
   - "Metamaterial"
   - "Kirigami"
