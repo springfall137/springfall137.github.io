@@ -10,7 +10,7 @@ project:
     collaborators:
 
   - title: "Abaqus: Kirigami Impact Simulation"
-    description: "Dynamic Projectile Impact & Energy Dissipation FEA (2025)"
+    description: "Dynamic Projectile Impact & Energy Dissipation FEA"
     image: "kirigami_projectile_simul.mp4"
     collaborators:
 

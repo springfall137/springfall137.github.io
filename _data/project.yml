@@ -56,7 +56,7 @@ project:
   - title: "Abaqus Simulation: Projectile Impact & Energy Dissipation on Kirigami"
     image: "kirigami_projectile_simul.mp4"
     detail: >
-      <p>Conducted dynamic impact finite element simulations in <strong>Abaqus/Explicit</strong> by dropping a projectile (chuck) onto a kirigami meta-sheet (June 2, 2025).</p>
+      <p>Conducted dynamic impact finite element simulations in <strong>Abaqus/Explicit</strong> by dropping a projectile (chuck) onto a kirigami meta-sheet.</p>
       <p>Simultaneously tracked and analyzed the <strong>kinetic energy of the projectile</strong> alongside the resulting <strong>energy dissipation</strong> (strain energy, plastic dissipation, and frictional dissipation) during the collision process to evaluate dynamic impact absorption performance.</p>
     tags:
       - Kirigami
@@ -64,7 +64,7 @@ project:
       - Impact Simulation
       - Energy Dissipation
     description: >-
-      Abaqus dynamic impact simulation of chuck dropping onto kirigami, analyzing kinetic and dissipated energy (Jun 2, 2025).
+      Abaqus dynamic impact simulation of chuck dropping onto kirigami, analyzing kinetic and dissipated energy.
     id: kirigami_projectile_simul
 
   - title: "AI Factory Hackathon"
