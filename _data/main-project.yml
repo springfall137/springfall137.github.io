@@ -1,7 +1,17 @@
 project:
+  - title: "ARAMIS 2.3M DIC Equipment Manager"
+    description: "Equipment Operation, User Training & Reservation Management (2026–Present)"
+    image: "ARAMIS 2.3M DIC.png"
+    collaborators:
+
   - title: "Samsung Display: AI-driven Hinge Pattern Discovery"
     description: "Surrogate modeling & FEM verification (2026–2027)"
     image: "samsung_display.png"
+    collaborators:
+
+  - title: "Abaqus: Kirigami Impact Simulation"
+    description: "Dynamic Projectile Impact & Energy Dissipation FEA (2025)"
+    image: "kirigami_projectile_simul.mp4"
     collaborators:
 
   - title: "Samsung Display: Bistable Kirigami Integration"

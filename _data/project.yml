@@ -1,4 +1,18 @@
 project:
+  - title: "ARAMIS 2.3M DIC Equipment Management & Operation"
+    image: "ARAMIS 2.3M DIC.png"
+    detail: >
+      <p>Appointed as the official equipment manager and instructor for the <strong>ARAMIS 2.3M 3D Digital Image Correlation (DIC)</strong> optical measurement system starting September 1, 2026.</p>
+      <p>Responsible for conducting comprehensive user operation and safety training, managing the equipment reservation schedule and ledger, maintaining optical calibration standards, and supporting lab members and collaborative researchers with full-field deformation and strain measurement experiments.</p>
+    tags:
+      - DIC
+      - ARAMIS
+      - Optical Measurement
+      - Equipment Management
+    description: >-
+      Official manager & instructor for ARAMIS 2.3M DIC system: operation training & reservation ledger management (Sep 2026 – Present).
+    id: aramis_dic_manager
+
   - title: "Samsung Display: AI-driven Pattern Discovery for Hinge Deformation"
     image: samsung_display.png
     detail: >
@@ -38,6 +52,20 @@ project:
     description: >-
       Kirigami-enhanced pulp-mold packaging for impact absorption (Jun 2025 – Sep 2025).
     id: lg_electronics
+
+  - title: "Abaqus Simulation: Projectile Impact & Energy Dissipation on Kirigami"
+    image: "kirigami_projectile_simul.mp4"
+    detail: >
+      <p>Conducted dynamic impact finite element simulations in <strong>Abaqus/Explicit</strong> by dropping a projectile (chuck) onto a kirigami meta-sheet (June 2, 2025).</p>
+      <p>Simultaneously tracked and analyzed the <strong>kinetic energy of the projectile</strong> alongside the resulting <strong>energy dissipation</strong> (strain energy, plastic dissipation, and frictional dissipation) during the collision process to evaluate dynamic impact absorption performance.</p>
+    tags:
+      - Kirigami
+      - Abaqus FEA
+      - Impact Simulation
+      - Energy Dissipation
+    description: >-
+      Abaqus dynamic impact simulation of chuck dropping onto kirigami, analyzing kinetic and dissipated energy (Jun 2, 2025).
+    id: kirigami_projectile_simul
 
   - title: "AI Factory Hackathon"
     image: ai_factory.gif
