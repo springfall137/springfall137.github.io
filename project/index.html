@@ -88,6 +88,9 @@ description: Projects of Dahyun Joo
                                 {% if proj.paper %}<a
                                     href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}">
                                     <i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}
+                                {% if proj.certificate %}<a
+                                    href="{% if proj.certificate contains 'http' %} {{ proj.certificate }} {% else %} /assets/pdf/{{ proj.certificate }} {% endif %}" target="_blank">
+                                    <i class="fas fa-certificate"></i>&nbsp; Certificate</a> &nbsp;&nbsp;&nbsp; {% endif %}
                                 {% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp;
                                     Video</a> &nbsp;&nbsp;&nbsp; {% endif %}
                                 {% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i

@@ -899,6 +899,39 @@ description: Department of Mechanical Engineering, Seoul National University
     <div class="row mt-2">
         {% for project in projects limit: 4 %}
         <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
+            {% if project.images %}
+            <div id="main-carousel-{{ forloop.index }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="{% if project.aspect_ratio %}aspect-ratio: {{ project.aspect_ratio }}; overflow: hidden;{% endif %} border-radius: 8px; max-height: 200px; width: 100%; margin: 0 auto;">
+                <div class="carousel-inner" style="height: 100%;">
+                    {% for img_item in project.images %}
+                    {% if img_item.src %}
+                        {% assign c_img = img_item.src %}
+                        {% assign c_img_pos = img_item.position | default: project.object_position | default: 'center' %}
+                    {% else %}
+                        {% assign c_img = img_item %}
+                        {% assign c_img_pos = project.object_position | default: 'center' %}
+                    {% endif %}
+                    {% assign c_img_url = '/assets/images/project/' | append: c_img | relative_url %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="4000" style="height: 100%;">
+                        {% if c_img contains '.mp4' %}
+                        <video class="d-block w-100" src="{{ c_img_url }}" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;"></video>
+                        {% elsif c_img contains '.gif' %}
+                        <img class="d-block w-100" src="{{ c_img_url }}" alt="" style="width: 100%; height: 100%; {% if project.aspect_ratio %}aspect-ratio: {{ project.aspect_ratio }};{% endif %} object-fit: {{ project.object_fit | default: 'cover' }}; object-position: {{ c_img_pos }}; border-radius: 8px; display: block; margin: 0 auto;">
+                        {% else %}
+                        <img class="d-block w-100" src="{{ c_img_url }}" alt="" style="width: 100%; height: 100%; {% if project.aspect_ratio %}aspect-ratio: {{ project.aspect_ratio }};{% endif %} object-fit: {{ project.object_fit | default: 'cover' }}; object-position: {{ c_img_pos }}; border-radius: 8px; display: block; margin: 0 auto;">
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" style="z-index: 10;" type="button" data-bs-target="#main-carousel-{{ forloop.index }}" data-bs-slide="prev" onclick="event.stopPropagation()">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.5); border-radius: 50%; width: 1.5rem; height: 1.5rem;"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" style="z-index: 10;" type="button" data-bs-target="#main-carousel-{{ forloop.index }}" data-bs-slide="next" onclick="event.stopPropagation()">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.5); border-radius: 50%; width: 1.5rem; height: 1.5rem;"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            {% else %}
             {% assign img_url = '/assets/images/project/' | append: project.image | relative_url %}
             {% if project.image contains '.mp4' %}
             <video src="{{ img_url }}" autoplay loop muted playsinline
@@ -909,6 +942,7 @@ description: Department of Mechanical Engineering, Seoul National University
             {% else %}
             <img src="{{ img_url }}" alt=""
                 style="max-width: 100%; width: auto; max-height: 200px; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+            {% endif %}
             {% endif %}
             <p class="pt-2 mt-md-2"
                 style="font-size: .9rem; font-weight: 400 !important; line-height: 1.1rem; text-align: center;">{{

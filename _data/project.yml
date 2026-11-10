@@ -1,16 +1,22 @@
 project:
   - title: "ARAMIS 2.3M DIC Equipment Management & Operation"
-    image: "ARAMIS 2.3M DIC.png"
+    images:
+      - src: "ARAMIS 2.3M DIC.png"
+      - src: "aramis_training_certificate.png"
+    aspect_ratio: "16/10"
+    certificate: "ARAMIS_Basic_Training_Certificate.pdf"
     detail: >
       <p>Appointed as the official equipment manager and instructor for the <strong>ARAMIS 2.3M 3D Digital Image Correlation (DIC)</strong> optical measurement system starting September 1, 2026.</p>
+      <p>Completed the official <strong>ZEISS ARAMIS Correlate Basic Training Course</strong> (Certificate No. OMAENG-26047) covering 3D deformation, displacement, and strain optical measurement & analysis.</p>
       <p>Responsible for conducting comprehensive user operation and safety training, managing the equipment reservation schedule and ledger, maintaining optical calibration standards, and supporting lab members and collaborative researchers with full-field deformation and strain measurement experiments.</p>
     tags:
       - DIC
       - ARAMIS
       - Optical Measurement
       - Equipment Management
+      - Certification
     description: >-
-      Official manager & instructor for ARAMIS 2.3M DIC system: operation training & reservation ledger management (Sep 2026 – Present).
+      Official manager & certified instructor for ARAMIS 2.3M DIC system: operation training & reservation ledger management (Sep 2026 – Present).
     id: aramis_dic_manager
 
   - title: "Samsung Display: AI-driven Pattern Discovery for Hinge Deformation"

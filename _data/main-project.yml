@@ -1,7 +1,10 @@
 project:
   - title: "ARAMIS 2.3M DIC Equipment Manager"
     description: "Equipment Operation, User Training & Reservation Management (2026–Present)"
-    image: "ARAMIS 2.3M DIC.png"
+    images:
+      - "ARAMIS 2.3M DIC.png"
+      - "aramis_training_certificate.png"
+    aspect_ratio: "16/10"
     collaborators:
 
   - title: "Samsung Display: AI-driven Hinge Pattern Discovery"
