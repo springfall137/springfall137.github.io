@@ -32,3 +32,13 @@ collections:
 
 theme: minima
 markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - project/DeepQC_Factory Hack Korea_Poster.pptx
+  - project/kirigami_projectile_simul.avi
+  - project/*.pdf
+  - assets/images/project/ai_factory.mp4
