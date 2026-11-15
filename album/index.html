@@ -137,7 +137,7 @@ permalink: /album/
             <iframe class="ig-media" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
             {% endif %}
             {% elsif post.image %}
-            <img class="ig-media" src="{{ post.image }}" alt="Album post" loading="lazy">
+            <img class="ig-media" src="{{ post.image }}" alt="Album post" loading="lazy"{% if post.position %} style="object-position: {{ post.position }};"{% endif %}>
             {% endif %}
 
             {% if post.video %}

@@ -2,9 +2,10 @@ list:
   - image: "/conference/KSME2026(Nov13)/KSME2026-11-13-presentation1.jpg"
     caption: "Oral presentation at the KSME Annual Meeting 2026! 🎤✨ Presenting our planar kirigami impact-mitigation sheet."
     date: "2026-11-13"
+    position: "left center"
 
   - image: "/album/album_assets/Nov-12-2026KSME2026-Jeju Olle Trail.jpg"
-    caption: "A quick getaway with my lab mates after KSME 2026 — walking the beautiful Jeju Olle Trail together! 🌊🥾"
+    caption: "Took a little trip to the Jeju Olle Trail with my lab mates! 🌊🥾"
     date: "2026-11-12"
 
   - image: "/album/album_assets/Aug-13-202612thKMSMPosterPresentation.jpg"
